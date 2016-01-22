@@ -1,0 +1,17 @@
+<matrDolorsa>
+	<dofEnable>0</dofEnable>
+	<dofFocus>0.985</dofFocus>
+	<dofAperture>1.2</dofAperture>
+	<dofBlur>0.6</dofBlur>
+	<dofAltPassEnable>1</dofAltPassEnable>
+	<dofAltFocalDepth>1</dofAltFocalDepth>
+	<dofAltfocalLength>500</dofAltfocalLength>
+	<dofAltStop>3</dofAltStop>
+	<dofAltShowFocus>1</dofAltShowFocus>
+	<rgbShiftEnable>0</rgbShiftEnable>
+	<rgbShiftAmount>0.01</rgbShiftAmount>
+	<rgbShiftAngle>0</rgbShiftAngle>
+	<faceColor>255, 255, 255, 0</faceColor>
+	<wireColor>255, 255, 255, 255</wireColor>
+<matrDolorsa/>
+</matrDolorsa>

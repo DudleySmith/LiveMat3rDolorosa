@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Examples">
+      <FileRef
+         location = "group:../../examples/gui/guiFromParametersExample/guiFromParametersExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/gui/guiExample/guiExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/addons/3DModelLoaderExample/3DModelLoaderExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../addons/ofxPostProcessing/Example_OF9/Example_OF9.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/3d/cameraRibbonExample/cameraRibbonExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/3d/pointPickerExample/pointPickerExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/3d/3DPrimitivesExample/3DPrimitivesExample.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "container:LiveMat3rDolorosa_ProtoA/LiveMat3rDolorosa_ProtoA.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LiveMat3rDolorosa_ProtoNoiseSphere/LiveMat3rDolorosa_ProtoNoiseSphere.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LiveMat3rDolorosa_ProtoB/LiveMat3rDolorosa_ProtoB.xcodeproj">
+   </FileRef>
+</Workspace>
