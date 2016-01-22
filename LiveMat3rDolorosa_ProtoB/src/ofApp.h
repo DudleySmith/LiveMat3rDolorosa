@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "ofxPostProcessing.h"
 #include "ofxGui.h"
+#include "ofxAssimpModelLoader.h"
 
 // DEFINE ------------------------
 #define guiFileName "settings.xml"
@@ -28,7 +29,8 @@ public:
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
     
-    string logStringToView = "";
+    ofLog   log;
+    string  logStringToView = "";
     
     // GUI Events --------------------------------------------------------------
     void dofEnablePressed();
@@ -36,22 +38,18 @@ public:
 
     
     ofMesh mesh;
+    ofxAssimpModelLoader loader;
     ofEasyCam cam;
     
     // RENDER PASSES ---------------------------------
     ofxPostProcessing post;
     
-    DofPass::Ptr MyDofPass;
-    DofAltPass::Ptr MyDofAltPass;
-    RGBShiftPass::Ptr MyRGBShiftPass;
-    LUTPass::Ptr MyLUTPass;
+    DofAltPass::Ptr     MyDofAltPass;
+    RGBShiftPass::Ptr   MyRGBShiftPass;
+    ZoomBlurPass::Ptr   MyZoomBlurPass;
+    //LUTPass::Ptr MyLUTPass;
     
     // GUI
-    ofParameter<bool>   dofEnable;
-    ofParameter<float>  dofFocus;
-    ofParameter<float>  dofAperture;
-    ofParameter<float>  dofBlur;
-    
     ofParameter<bool>   dofAltPassEnable;
     ofParameter<float>  dofAltFocalDepth;
     ofParameter<float>  dofAltfocalLength;
@@ -61,6 +59,14 @@ public:
     ofParameter<bool>   rgbShiftEnable;
     ofParameter<float>  rgbShiftAmount;
     ofParameter<float>  rgbShiftAngle;
+    
+    //float exposure = 0.48, float decay = 0.9, float density = 0.25, float weight = 0.25, float clamp = 1);
+    ofParameter<bool>   zoomBlurEnable;
+    ofParameter<float>  zoomBlurExposure = 0.48;
+    ofParameter<float>  zoomBlurDecay = 0.9;
+    ofParameter<float>  zoomBlurDensity = 0.25;
+    ofParameter<float>  zoomBlurWeight = 0.25;
+    ofParameter<float>  zoomBlurClamp = 1;
     
     ofParameter<ofColor> faceColor;
     ofParameter<ofColor> wireColor;
