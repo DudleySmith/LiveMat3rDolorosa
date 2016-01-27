@@ -1,0 +1,18 @@
+<matrDolorsa>
+	<dofAltPassEnable>0</dofAltPassEnable>
+	<dofAltFocalDepth>5.495</dofAltFocalDepth>
+	<dofAltfocalLength>17.9825</dofAltfocalLength>
+	<dofAltStop>75.3125</dofAltStop>
+	<dofAltShowFocus>0</dofAltShowFocus>
+	<rgbShiftEnable>1</rgbShiftEnable>
+	<rgbShiftAmount>0.00475</rgbShiftAmount>
+	<rgbShiftAngle>0</rgbShiftAngle>
+	<zoomBlurEnable>1</zoomBlurEnable>
+	<zoomBlurExposure>0.78</zoomBlurExposure>
+	<zoomBlurDecay>0.595</zoomBlurDecay>
+	<zoomBlurDensity>0.49</zoomBlurDensity>
+	<zoomBlurWeight>0.69</zoomBlurWeight>
+	<faceColor>255, 255, 255, 36</faceColor>
+	<wireColor>255, 255, 255, 255</wireColor>
+<matrDolorsa/>
+</matrDolorsa>

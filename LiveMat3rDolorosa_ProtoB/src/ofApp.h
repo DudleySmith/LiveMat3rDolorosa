@@ -6,7 +6,7 @@
 #include "ofxAssimpModelLoader.h"
 
 // DEFINE ------------------------
-#define guiFileName "settings.xml"
+#define renderPanelFileName "render.xml"
 
 class ofApp : public ofBaseApp{
 public:
@@ -40,13 +40,15 @@ public:
     ofMesh mesh;
     ofxAssimpModelLoader loader;
     ofEasyCam cam;
+    ofEasyCam outCam;
     
     // RENDER PASSES ---------------------------------
     ofxPostProcessing post;
     
-    DofAltPass::Ptr     MyDofAltPass;
-    RGBShiftPass::Ptr   MyRGBShiftPass;
-    ZoomBlurPass::Ptr   MyZoomBlurPass;
+    DofAltPass::Ptr     dofAltPass;
+    RGBShiftPass::Ptr   rgbShiftPass;
+    ZoomBlurPass::Ptr   zoomBlurPass;
+    HsbShiftPass::Ptr   hsbShiftPass;
     //LUTPass::Ptr MyLUTPass;
     
     // GUI
@@ -71,6 +73,17 @@ public:
     ofParameter<ofColor> faceColor;
     ofParameter<ofColor> wireColor;
 
-    ofxPanel gui;
+    ofxPanel renderPanel;
+    
+    // Camera
+    ofxFloatSlider  camPosX;
+    ofxFloatSlider  camPosY;
+    ofxFloatSlider  camPosZ;
+    
+    ofxFloatSlider  camRotX;
+    ofxFloatSlider  camRotY;
+    ofxFloatSlider  camRotZ;
+    
+    ofxPanel cameraPanel;
     
 };

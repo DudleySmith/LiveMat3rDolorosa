@@ -5,78 +5,120 @@
 void ofApp::setup(){
     ofSetVerticalSync(true);
     ofBackground(ofColor::black);
+    ofEnableAntiAliasing();
+    
+    //ofEnableSmoothing();
     
     guiSetup();
     
     //mesh.load("Arbor.ply");
     //mesh.load("lofi-bunny.ply");
-    ofFile meshExists = ofFile("ANGE_MIDDLE.obj");
+    ofFile meshExists = ofFile("ANGE_LESS_Exported.obj");
     if (meshExists.exists()) {
         loader.loadModel(meshExists.path());
         mesh = loader.getMesh(0);
         ofLogNotice() << "Mesh loaded :  Nb Meshes:" << ofToString(loader.getMeshCount());
+        
     }else{
         ofLogError() << "CRAP : The mesh is not loaded ! " + meshExists.path();
         
     }
     
-    // INIT PASSES --------------------------------------
+   // INIT PASSES --------------------------------------
     post.init(ofGetWidth(), ofGetHeight());
-    MyRGBShiftPass = post.createPass<RGBShiftPass>();
-    MyZoomBlurPass = post.createPass<ZoomBlurPass>();
-    MyDofAltPass = post.createPass<DofAltPass>();
+    dofAltPass = post.createPass<DofAltPass>();
+    zoomBlurPass = post.createPass<ZoomBlurPass>();
+    rgbShiftPass = post.createPass<RGBShiftPass>();
+    
+    // INIT CAM ----------------------------------------
+    outCam.setOrientation(ofVec3f(90, 0, 0));
     
 }
 
 //--------------------------------------------------------------
 void ofApp::guiSetup(){
     
-    gui.setup("matrDolorsa");
+    // RENDER --------------------------------------------
+    renderPanel.setup("matrDolorsa");
     
     //DofAltPass(const ofVec2f& aspect, bool arb, float focalDepth = 1.f, float focalLength = 500.f, float fStop = 3.f, bool showFocus = false);
-    gui.add(dofAltPassEnable.set("dofAltPassEnable", true));
-    gui.add(dofAltFocalDepth.set("dofAltFocalDepth", 1.0, 0.5, 200.0));
-    gui.add(dofAltfocalLength.set("dofAltfocalLength", 1.0, 0.5, 200.0));
-    gui.add(dofAltStop.set("dofAltStop", 5.0, 0.5, 200.0));
-    gui.add(dofAltShowFocus.set("dofAltShowFocus", true));
+    renderPanel.add(dofAltPassEnable.set("dofAltPassEnable", true));
+    renderPanel.add(dofAltFocalDepth.set("dofAltFocalDepth", 1.0, 0.5, 500.0));
+    renderPanel.add(dofAltfocalLength.set("dofAltfocalLength", 1.0, 0.5, 500.0));
+    renderPanel.add(dofAltStop.set("dofAltStop", 5.0, 0.5, 200.0));
+    renderPanel.add(dofAltShowFocus.set("dofAltShowFocus", true));
     
     //RGBShiftPass(const ofVec2f& aspect, bool arb, float amount = 0.005, float angle = 0.0);
-    gui.add(rgbShiftEnable.set("rgbShiftEnable", true));
-    gui.add(rgbShiftAmount.set("rgbShiftAmount", 0.0, 0.0, 0.05));
-    gui.add(rgbShiftAngle.set("rgbShiftAngle", 0, 0, 360));
+    renderPanel.add(rgbShiftEnable.set("rgbShiftEnable", true));
+    renderPanel.add(rgbShiftAmount.set("rgbShiftAmount", 0.0, 0.0, 0.05));
+    renderPanel.add(rgbShiftAngle.set("rgbShiftAngle", 0, 0, 360));
     
     //float exposure = 0.48, float decay = 0.9, float density = 0.25, float weight = 0.25, float clamp = 1);
-    gui.add(zoomBlurEnable.set("zoomBlurEnable", true));
-    gui.add(zoomBlurExposure.set("zoomBlurExposure", 0.48, 0.0, 1.0));
-    gui.add(zoomBlurDecay.set("zoomBlurDecay", 0.9, 0.0, 1.0));
-    gui.add(zoomBlurDensity.set("zoomBlurDensity", 0.25, 0.0, 1.0));
-    gui.add(zoomBlurWeight.set("zoomBlurWeight", 0.25, 0.0, 1.0));
+    renderPanel.add(zoomBlurEnable.set("zoomBlurEnable", true));
+    renderPanel.add(zoomBlurExposure.set("zoomBlurExposure", 0.48, 0.0, 1.0));
+    renderPanel.add(zoomBlurDecay.set("zoomBlurDecay", 0.9, 0.0, 1.0));
+    renderPanel.add(zoomBlurDensity.set("zoomBlurDensity", 0.25, 0.0, 1.0));
+    renderPanel.add(zoomBlurWeight.set("zoomBlurWeight", 0.25, 0.0, 1.0));
     
-    gui.add(faceColor.set("faceColor", ofColor(255,255,255,0), ofColor(0,0,0,0), ofColor(255,255,255,255)));
-    gui.add(wireColor.set("wireColor", ofColor(255,255,255,255), ofColor(0,0,0,0), ofColor(255,255,255,255)));
+    renderPanel.add(faceColor.set("faceColor", ofColor(255,255,255,0), ofColor(0,0,0,0), ofColor(255,255,255,255)));
+    renderPanel.add(wireColor.set("wireColor", ofColor(255,255,255,255), ofColor(0,0,0,0), ofColor(255,255,255,255)));
     
-    gui.loadFromFile(guiFileName);
+    renderPanel.loadFromFile(renderPanelFileName);
+    
+    
+    // CAMERA --------------------------------------------
+    cameraPanel.setup("camera");
+    
+    cameraPanel.add(camPosX.setup("Pos X", 0, -1000, 200));
+    cameraPanel.add(camPosY.setup("Pos Y", 0, -1000, 200));
+    cameraPanel.add(camPosZ.setup("Pos Z", 0, -1000, 200));
+    
+    cameraPanel.add(camRotX.setup("Rot X", 0, 0, 360));
+    cameraPanel.add(camRotY.setup("Rot Y", 0, 0, 360));
+    cameraPanel.add(camRotZ.setup("Rot Z", 0, 0, 360));
     
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
-    MyDofAltPass->setEnabled(dofAltPassEnable);
-    MyDofAltPass->setFocalDepth(dofAltFocalDepth);
-    MyDofAltPass->setFocalLength(dofAltfocalLength);
-    MyDofAltPass->setShowFocus(dofAltShowFocus);
+    // Lerp position --> it will go in class soon
+    ofPoint pos;
+    float amplitude = 400;
+    float speed = 0.1;
+    float relativeTime = ofGetElapsedTimef() * speed;
+    float ratio = abs(relativeTime - ceil(relativeTime));
+    float sinRatio = sin(TWO_PI * ratio);
+    //
+    pos = outCam.getPosition();
+    pos.y = ofLerp(-amplitude, amplitude, sinRatio);
     
-    MyRGBShiftPass->setEnabled(rgbShiftEnable);
-    MyRGBShiftPass->setAmount(rgbShiftAmount);
-    MyRGBShiftPass->setAngle(ofDegToRad(rgbShiftAngle));
+    outCam.setGlobalPosition(pos);
     
-    MyZoomBlurPass->setEnabled(zoomBlurEnable);
-    MyZoomBlurPass->setDecay(zoomBlurDecay);
-    MyZoomBlurPass->setDensity(zoomBlurDensity);
-    MyZoomBlurPass->setExposure(zoomBlurExposure);
-    MyZoomBlurPass->setWeight(zoomBlurWeight);
-
+    camPosX = outCam.getGlobalPosition().x;
+    camPosY = outCam.getGlobalPosition().y;
+    camPosZ = outCam.getGlobalPosition().z;
+    camRotX = outCam.getOrientationEuler().x;
+    camRotY = outCam.getOrientationEuler().y;
+    camRotZ = outCam.getOrientationEuler().z;
+    
+    dofAltPass->setEnabled(dofAltPassEnable);
+    dofAltPass->setFocalDepth(dofAltFocalDepth);
+    dofAltPass->setFocalLength(dofAltfocalLength);
+    dofAltPass->setShowFocus(dofAltShowFocus);
+    
+    rgbShiftPass->setEnabled(rgbShiftEnable);
+    rgbShiftPass->setAmount(rgbShiftAmount);
+    rgbShiftPass->setAngle(ofDegToRad(rgbShiftAngle));
+    
+    zoomBlurPass->setEnabled(zoomBlurEnable);
+    zoomBlurPass->setDecay(zoomBlurDecay);
+    zoomBlurPass->setDensity(zoomBlurDensity);
+    zoomBlurPass->setExposure(zoomBlurExposure);
+    zoomBlurPass->setWeight(zoomBlurWeight);
+    
+    
+    
+    
 }
 
 //--------------------------------------------------------------
@@ -94,8 +136,8 @@ void ofApp::draw(){
     //glPointSize(2);
     
     // begin scene to post process
-    post.begin(cam);
-    cam.begin();
+    post.begin(outCam);
+    outCam.begin();
     
     //ofDrawAxis(200);
     
@@ -122,17 +164,16 @@ void ofApp::draw(){
     ofPopMatrix();
     
     // Whole MATRIX Because Mesh is Upside Down
-    ofPushMatrix();
-    ofDrawAxis(200);
+    ofPopMatrix();
+    //ofDrawAxis(200);
     
     // end scene and draw
-    cam.end();
+    outCam.end();
     post.end();
     
-    ofPopMatrix();
-    
     // DRAW GUI
-    gui.draw();
+    renderPanel.draw();
+    cameraPanel.draw();
     ofDrawBitmapString(ofToString(ofGetFrameRate()) + " : " + logStringToView, 10, ofGetHeight() - 10);
     
 }
@@ -141,12 +182,12 @@ void ofApp::draw(){
 void ofApp::keyPressed(int key){
     
     if(key == 's'){
-        gui.saveToFile(guiFileName);
-        logStringToView = "Saved file : " + ofToString(guiFileName);
+        renderPanel.saveToFile(renderPanelFileName);
+        logStringToView = "Saved file : " + ofToString(renderPanelFileName);
     }
     else if(key == 'l'){
-        gui.loadFromFile(guiFileName);
-        logStringToView = "Loaded file : " + ofToString(guiFileName);
+        renderPanel.loadFromFile(renderPanelFileName);
+        logStringToView = "Loaded file : " + ofToString(renderPanelFileName);
     }
 
 }

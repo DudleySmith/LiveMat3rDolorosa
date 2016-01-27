@@ -1,17 +1,9 @@
-<matrDolorsa>
-	<dofAltPassEnable>0</dofAltPassEnable>
-	<dofAltFocalDepth>107.233</dofAltFocalDepth>
-	<dofAltfocalLength>200</dofAltfocalLength>
-	<dofAltStop>10.475</dofAltStop>
-	<dofAltShowFocus>1</dofAltShowFocus>
-	<rgbShiftEnable>1</rgbShiftEnable>
-	<rgbShiftAmount>0.006</rgbShiftAmount>
-	<rgbShiftAngle>41.4</rgbShiftAngle>
-	<zoomBlurEnable>1</zoomBlurEnable>
-	<zoomBlurExposure>0.48</zoomBlurExposure>
-	<zoomBlurDecay>0.9</zoomBlurDecay>
-	<zoomBlurDensity>0.04</zoomBlurDensity>
-	<zoomBlurWeight>0.25</zoomBlurWeight>
-	<faceColor>255, 255, 255, 0</faceColor>
-	<wireColor>255, 255, 255, 255</wireColor>
-</matrDolorsa>
+<camera>
+	<Pos_X>144.373</Pos_X>
+	<Pos_Y>-110.403</Pos_Y>
+	<Pos_Z>-395.873</Pos_Z>
+	<Rot_X>-94.9985</Rot_X>
+	<Rot_Y>-142.129</Rot_Y>
+	<Rot_Z>17.7862</Rot_Z>
+<camera/>
+</camera>

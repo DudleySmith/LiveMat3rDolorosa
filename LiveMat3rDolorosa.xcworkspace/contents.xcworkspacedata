@@ -5,6 +5,15 @@
       location = "container:"
       name = "Examples">
       <FileRef
+         location = "group:../../examples/gl/fboTrailsExample/fboTrailsExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../addons/ofxAnimatable/example/example.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/3d/advanced3dExample/advanced3dExample.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:../../examples/gui/guiFromParametersExample/guiFromParametersExample.xcodeproj">
       </FileRef>
       <FileRef
@@ -30,9 +39,12 @@
       location = "container:LiveMat3rDolorosa_ProtoA/LiveMat3rDolorosa_ProtoA.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:LiveMat3rDolorosa_ProtoNoiseSphere/LiveMat3rDolorosa_ProtoNoiseSphere.xcodeproj">
+      location = "group:LiveMat3rDolorosa_ProtoB/LiveMat3rDolorosa_ProtoB.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:LiveMat3rDolorosa_ProtoB/LiveMat3rDolorosa_ProtoB.xcodeproj">
+      location = "group:LiveMat3rDolorosa_ProtoC/LiveMat3rDolorosa_ProtoC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LiveMat3rDolorosa_ProtoNoiseSphere/LiveMat3rDolorosa_ProtoNoiseSphere.xcodeproj">
    </FileRef>
 </Workspace>
