@@ -2,7 +2,10 @@
 
 #include "ofMain.h"
 #include "ofxPointCloud.h"
+#include "ofxGui.h"
+
 #include "matrDolorosaShapes.h"
+#include "matrDolorosaCam.h"
 
 class ofApp : public ofBaseApp{
     
@@ -25,8 +28,12 @@ public:
     
     ofxPointCloud pointCloud;
     
-    ofEasyCam cam;
+    matrDolorosaCam cam;
     
     matrDolorosaShapes  shapes;
+
+    ofxPanel          panel;
+    ofParameter<bool> redrawShapes;
+    ofParameter<bool> drawMarks;
     
 };

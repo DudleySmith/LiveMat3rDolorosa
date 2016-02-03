@@ -1,3 +1,5 @@
 ofxAnimatable
+ofxGui
+ofxOsc
 ofxPointCloud
 ofxSvg

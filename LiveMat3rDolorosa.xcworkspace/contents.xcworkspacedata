@@ -1,40 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <Group
-      location = "container:"
-      name = "Examples">
-      <FileRef
-         location = "group:../../examples/gl/fboTrailsExample/fboTrailsExample.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../../addons/ofxAnimatable/example/example.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../../examples/3d/advanced3dExample/advanced3dExample.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../../examples/gui/guiFromParametersExample/guiFromParametersExample.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../../examples/gui/guiExample/guiExample.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../../examples/addons/3DModelLoaderExample/3DModelLoaderExample.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../../addons/ofxPostProcessing/Example_OF9/Example_OF9.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../../examples/3d/cameraRibbonExample/cameraRibbonExample.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../../examples/3d/pointPickerExample/pointPickerExample.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../../examples/3d/3DPrimitivesExample/3DPrimitivesExample.xcodeproj">
-      </FileRef>
-   </Group>
    <FileRef
       location = "container:LiveMat3rDolorosa_ProtoA/LiveMat3rDolorosa_ProtoA.xcodeproj">
    </FileRef>

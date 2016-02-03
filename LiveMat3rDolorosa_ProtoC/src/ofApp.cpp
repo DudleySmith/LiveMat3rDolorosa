@@ -4,18 +4,35 @@ bool ySort(ofPoint a, ofPoint b){return a.distance(ofPoint::zero()) > b.distance
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    
+    // ------------------------------------
     ofSetVerticalSync(true);
-    
     ofBackground(0);
-    
     ofSetColor(255);
     ofNoFill();
     
     // ------------------------------------
     shapes.setup();
+    
     // ------------------------------------
     pointCloud.load("MOTIF.svg");
     pointCloud.setup();
+    
+    // ------------------------------------
+    cam.setup();
+    cam.setPosition(0, 0, 1000);
+    cam.setTarget(ofVec3f::zero());
+    
+    // ------------------------------------
+    panel.setup();
+    panel.add(redrawShapes.set("redrawShapes", false));
+    panel.add(drawMarks.set("drawMarks", false));
+    
+    panel.setPosition(10, 10);
+    shapes.panel.setPosition(200, 10);
+    pointCloud.panel.setPosition(400, 10);
+    cam.panel.setPosition(600, 10);
+    
 }
 
 
@@ -23,9 +40,13 @@ void ofApp::setup(){
 void ofApp::update(){
     
     // ------------------------------------
+    shapes.drawMarks = drawMarks;
     shapes.update();
     // ------------------------------------
+    pointCloud.hasToDrawMarks = drawMarks;
     pointCloud.update();
+    // ------------------------------------
+    cam.update();
 }
 
 //--------------------------------------------------------------
@@ -36,11 +57,41 @@ void ofApp::draw(){
     cam.begin();
     
     // ------------------------------------
-    shapes.draw();
+    if(redrawShapes == true){
+        float scaleFactor = 0.25;
+        
+        ofPushMatrix();
+        
+        ofTranslate(-0.5 * ofGetWidth(), - 0.5 * ofGetHeight());
+        ofTranslate(scaleFactor * 0.5 * ofGetWidth(), scaleFactor * 0.5 * ofGetHeight());
+        
+        ofScale(scaleFactor, scaleFactor);
+        
+        shapes.draw();
+        
+        ofPopMatrix();
+    }
+    
     // ------------------------------------
-    pointCloud.draw();
+    if (drawMarks) {
+        ofPushStyle();
+        ofFill();
+        ofSetColor(ofColor::orange, 50);
+        ofDrawRectangle(-0.5 * ofGetWidth(), - 0.5 * ofGetHeight(), ofGetWidth(), ofGetHeight());
+        ofPopStyle();
+    }
+    
+    // ------------------------------------
+    pointCloud.draw(shapes.background);
     
     cam.end();
+    
+    // ------------------------------------
+    panel.draw();
+    pointCloud.panel.draw();
+    shapes.panel.draw();
+    cam.panel.draw();
+    
 }
 
 //--------------------------------------------------------------
