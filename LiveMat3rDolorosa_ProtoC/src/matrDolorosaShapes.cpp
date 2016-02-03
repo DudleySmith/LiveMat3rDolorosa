@@ -17,6 +17,9 @@ void matrDolorosaShapes::setup(){
     background.end();
     
     shapes.setName("shapes");
+    
+    shapes.add(drawFbo.set("drawFbo",true));
+    shapes.add(drawAs3D.set("drawAs3D",false));
     shapes.add(rootDriver.set("rootDriver",0, 0, 1));
     
     shapes.add(alphaTrails.set("alphaTrails",20,0,255));
@@ -48,13 +51,30 @@ void matrDolorosaShapes::update(){
     // ---------- ---------- ---------- ---------- ---------- ----------
     background.begin();
     
+    if(drawFbo){
+        drawInstructions();
+    }else{
+        ofPushStyle();
+        ofFill();
+        ofSetColor(ofColor::black);
+        ofDrawRectangle(0, 0, background.getWidth(), background.getHeight());
+        ofPopStyle();
+    }
+    
+    background.end();
+    
+}
+
+
+// -----------------------------------------
+void matrDolorosaShapes::drawInstructions(){
     ofPushStyle(); // Style pushed ------------------------------
     ofPushMatrix();
     
     ofSetCircleResolution(circleResolution);
     ofSetLineWidth(lineWidth);
     
-//    float ratio = anim.val();
+    //    float ratio = anim.val();
     float ratio = rootDriver;
     
     ofFill();
@@ -81,17 +101,20 @@ void matrDolorosaShapes::update(){
             ofScale(1 - xSizeOffset * idxRow, 1 - ySizeOffset * idxLine);
             // -- -- --
             ofDrawCircle(0, 0, 0.5 * (float)background.getWidth() * ratio);
+            
+            ofSpherePrimitive sphere;
+            sphere.set(0.5 * (float)background.getWidth() * ratio, circleResolution);
+            sphere.drawWireframe();
+                       
+//            ofDrawSphere(0.5 * (float)background.getWidth() * ratio);
             // -- -- --
             ofPopMatrix();
         }
     }
-
+    
     
     ofPopMatrix();
     ofPopStyle();// Style poped ------------------------------
-    
-    // ---------- ---------- ---------- ---------- ---------- ----------
-    background.end();
     
 }
 
@@ -100,10 +123,10 @@ void matrDolorosaShapes::draw(){
     
     ofPushMatrix();
     ofTranslate(-0.5 * ofGetWidth(), -0.5 * ofGetHeight());
-    background.draw(0,0);
     
-    if(drawMarks)
-        ofDrawRectangle(0, 0, background.getWidth(), background.getHeight());
-    
+    if (drawAs3D) {
+        drawInstructions();
+    }
+   
     ofPopMatrix();
 }

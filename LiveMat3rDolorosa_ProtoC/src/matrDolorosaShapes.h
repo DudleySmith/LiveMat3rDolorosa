@@ -18,16 +18,17 @@ public:
     void setup();
     void update();
     void draw();
+    void drawInstructions();
     
     ofFbo background;
     //ofxAnimatableFloat  anim;
-    
-    bool drawMarks;
     
     ofxPanel panel;
     ofxOscParameterSync sync;
     ofParameterGroup shapes;
     
+    ofParameter<bool>   drawFbo;
+    ofParameter<bool>   drawAs3D;
     ofParameter<float> rootDriver;
     
     ofParameter<float>  alphaTrails;

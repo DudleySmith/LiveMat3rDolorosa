@@ -40,11 +40,12 @@ void ofApp::setup(){
 void ofApp::update(){
     
     // ------------------------------------
-    shapes.drawMarks = drawMarks;
     shapes.update();
+    
     // ------------------------------------
     pointCloud.hasToDrawMarks = drawMarks;
     pointCloud.update();
+    
     // ------------------------------------
     cam.update();
 }
@@ -63,11 +64,15 @@ void ofApp::draw(){
         ofPushMatrix();
         
         ofTranslate(-0.5 * ofGetWidth(), - 0.5 * ofGetHeight());
-        ofTranslate(scaleFactor * 0.5 * ofGetWidth(), scaleFactor * 0.5 * ofGetHeight());
+        //ofTranslate(scaleFactor * 0.5 * ofGetWidth(), scaleFactor * 0.5 * ofGetHeight());
         
         ofScale(scaleFactor, scaleFactor);
         
-        shapes.draw();
+        shapes.background.draw(0,0);
+        
+        if(drawMarks){
+            ofDrawRectangle(0, 0, shapes.background.getWidth(), shapes.background.getHeight());
+        }
         
         ofPopMatrix();
     }
@@ -81,6 +86,7 @@ void ofApp::draw(){
         ofPopStyle();
     }
     
+    shapes.draw();
     // ------------------------------------
     pointCloud.draw(shapes.background);
     
