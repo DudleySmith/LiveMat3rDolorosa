@@ -28,7 +28,7 @@ void matrDolorosaCam::setup(){
     
     panel.setup(cam);
     // by now needs to pass the gui parameter groups since the panel internally creates it's own group
-    sync.setup((ofParameterGroup&)panel.getParameter(),8030,"localhost", 8031);
+    sync.setup((ofParameterGroup&)panel.getParameter(),8040,"localhost", 8041);
     
     camX.addListener(this, &matrDolorosaCam::xChanged);
     camX.addListener(this, &matrDolorosaCam::yChanged);

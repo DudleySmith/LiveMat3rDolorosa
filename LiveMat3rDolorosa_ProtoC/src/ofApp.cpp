@@ -9,7 +9,7 @@ void ofApp::setup(){
     ofSetVerticalSync(true);
     ofBackground(0);
     ofSetColor(255);
-    ofNoFill();
+    //ofNoFill();
     
     // ------------------------------------
     shapes.setup();
@@ -20,18 +20,25 @@ void ofApp::setup(){
     
     // ------------------------------------
     cam.setup();
-    cam.setPosition(0, 0, 1000);
-    cam.setTarget(ofVec3f::zero());
+    //cam.setPosition(0, 0, 1000);
+    //cam.setTarget(ofVec3f::zero());
+    
+    // ------------------------------------
+    postFx.setup();
     
     // ------------------------------------
     panel.setup();
+    panel.add(drawUI.set("drawUI", true));
     panel.add(redrawShapes.set("redrawShapes", false));
     panel.add(drawMarks.set("drawMarks", false));
+    panel.loadFromFile("main.xml");
     
     panel.setPosition(10, 10);
-    shapes.panel.setPosition(200, 10);
-    pointCloud.panel.setPosition(400, 10);
-    cam.panel.setPosition(600, 10);
+    shapes.panel.setPosition(210, 10);
+    pointCloud.panelAnims.setPosition(420, 10);
+    pointCloud.panelDraws.setPosition(420, 410);
+    cam.panel.setPosition(630, 10);
+    postFx.panel.setPosition(840, 10);
     
 }
 
@@ -45,6 +52,9 @@ void ofApp::update(){
     // ------------------------------------
     pointCloud.hasToDrawMarks = drawMarks;
     pointCloud.update();
+
+    // ------------------------------------
+    postFx.update();
     
     // ------------------------------------
     cam.update();
@@ -53,8 +63,7 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     
-    ofDrawBitmapString(ofToString(ofGetFrameRate()),20,20);
-    
+    postFx.post.begin(cam);
     cam.begin();
     
     // ------------------------------------
@@ -77,6 +86,8 @@ void ofApp::draw(){
         ofPopMatrix();
     }
     
+
+
     // ------------------------------------
     if (drawMarks) {
         ofPushStyle();
@@ -87,22 +98,38 @@ void ofApp::draw(){
     }
     
     shapes.draw();
+    
     // ------------------------------------
     pointCloud.draw(shapes.background);
     
+
     cam.end();
+    postFx.post.end();
     
     // ------------------------------------
-    panel.draw();
-    pointCloud.panel.draw();
-    shapes.panel.draw();
-    cam.panel.draw();
+    if(drawUI){
+    
+        ofDrawBitmapString(ofToString(ofGetFrameRate()),20,20);
+        
+        panel.draw();
+        pointCloud.panelAnims.draw();
+        pointCloud.panelDraws.draw();
+        shapes.panel.draw();
+        postFx.panel.draw();
+        cam.panel.draw();
+    }
     
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    
+    if(key == 'h'){
+        if(drawUI == true){
+            drawUI = false;
+        }else{
+            drawUI = true;
+        }
+    }
 }
 
 //--------------------------------------------------------------

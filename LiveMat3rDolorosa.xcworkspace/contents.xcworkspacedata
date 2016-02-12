@@ -5,6 +5,9 @@
       location = "container:"
       name = "example">
       <FileRef
+         location = "group:../../addons/ofxPostProcessing/Example_OF9/Example_OF9.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:../../examples/addons/oscReceiveExample/oscReceiveExample.xcodeproj">
       </FileRef>
    </Group>

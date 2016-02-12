@@ -43,4 +43,8 @@ public:
     ofParameter<float>  xSizeOffset;
     ofParameter<float>  ySizeOffset;
     
+    ofParameter<bool> drawCircle;
+    ofParameter<bool> drawTriangle;
+    ofParameter<bool> drawSphere;
+    
 };

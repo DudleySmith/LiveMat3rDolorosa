@@ -6,6 +6,7 @@
 
 #include "matrDolorosaShapes.h"
 #include "matrDolorosaCam.h"
+#include "matrDolorosaPostFX.h"
 
 class ofApp : public ofBaseApp{
     
@@ -29,11 +30,14 @@ public:
     ofxPointCloud pointCloud;
     
     matrDolorosaCam cam;
+    //ofEasyCam cam;
     
     matrDolorosaShapes  shapes;
+    matrDolorosaPostFX postFx;
 
     ofxPanel          panel;
     ofParameter<bool> redrawShapes;
     ofParameter<bool> drawMarks;
+    ofParameter<bool> drawUI;
     
 };

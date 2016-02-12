@@ -35,6 +35,10 @@ void matrDolorosaShapes::setup(){
     shapes.add(xSizeOffset.set("xSizeOffset",0,-1,1));
     shapes.add(ySizeOffset.set("ySizeOffset",0,-1,1));
 
+    shapes.add(drawCircle.set("drawCircle",true));
+    shapes.add(drawTriangle.set("drawTriangle",true));
+    shapes.add(drawSphere.set("drawSphere",true));
+    
     panel.setup(shapes);
     // by now needs to pass the gui parameter groups since the panel internally creates it's own group
     sync.setup((ofParameterGroup&)panel.getParameter(),8020,"localhost", 8021);
@@ -71,7 +75,6 @@ void matrDolorosaShapes::drawInstructions(){
     ofPushStyle(); // Style pushed ------------------------------
     ofPushMatrix();
     
-    ofSetCircleResolution(circleResolution);
     ofSetLineWidth(lineWidth);
     
     //    float ratio = anim.val();
@@ -82,12 +85,6 @@ void matrDolorosaShapes::drawInstructions(){
     ofDrawRectangle(0,0,background.getWidth(),background.getHeight());
     
     // ---------- ---------- ---------- ---------- ---------- ----------
-    if(fillNoFill==true){
-        ofFill();
-    }else{
-        ofNoFill();
-    }
-    
     ofSetColor(255,255,255);
     
     for (float idxRow = 1; idxRow <= nbRowsShapes; idxRow++) {
@@ -99,13 +96,46 @@ void matrDolorosaShapes::drawInstructions(){
             pos.y = 0.5 * background.getHeight() + ((idxLine-1) - 0.5*(float)(nbLinesShapes-1)) * yOffset;
             ofTranslate(pos);
             ofScale(1 - xSizeOffset * idxRow, 1 - ySizeOffset * idxLine);
-            // -- -- --
-            ofDrawCircle(0, 0, 0.5 * (float)background.getWidth() * ratio);
             
-            ofSpherePrimitive sphere;
-            sphere.set(0.5 * (float)background.getWidth() * ratio, circleResolution);
-            sphere.drawWireframe();
-                       
+            // -- -- --
+            if(drawCircle){
+                ofPushStyle();
+                if(fillNoFill==true){
+                    ofFill();
+                }else{
+                    ofNoFill();
+                }
+                ofSetCircleResolution(circleResolution);
+                ofDrawCircle(0, 0, 0.5 * (float)background.getWidth() * ratio);
+                ofPopStyle();
+            }
+            
+            // -- -- --
+            if(drawSphere){
+                ofPushStyle();
+                ofSpherePrimitive sphere;
+                sphere.set(0.5 * (float)background.getWidth() * ratio, circleResolution);
+                if(fillNoFill==true){
+                    sphere.drawFaces();
+                }else{
+                    sphere.drawWireframe();
+                }
+                ofPopStyle();
+            }
+            
+            // -- -- --
+            if(drawTriangle){
+                ofPushStyle();
+                if(fillNoFill==true){
+                    ofFill();
+                }else{
+                    ofNoFill();
+                }
+                ofSetCircleResolution(3);
+                ofDrawCircle(0, 0, 0.5 * (float)background.getWidth() * ratio);
+                ofPopStyle();
+            }
+                
 //            ofDrawSphere(0.5 * (float)background.getWidth() * ratio);
             // -- -- --
             ofPopMatrix();
