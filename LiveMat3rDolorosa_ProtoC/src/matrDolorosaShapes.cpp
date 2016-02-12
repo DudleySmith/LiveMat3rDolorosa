@@ -25,10 +25,10 @@ void matrDolorosaShapes::setup(){
     shapes.add(alphaTrails.set("alphaTrails",20,0,255));
     shapes.add(lineWidth.set("lineWidth",1,0,10));
     shapes.add(circleResolution.set("circleResolution",0,0,24));
-    shapes.add(nbLinesShapes.set("nbLinesShapes",1,0,10));
-    shapes.add(nbRowsShapes.set("nbRowsShapes",1,0,10));
+    shapes.add(nbLinesShapes.set("nbLines",1,0,10));
+    shapes.add(nbRowsShapes.set("nbRows",1,0,10));
     
-    shapes.add(fillNoFill.set("fillNoFill",false));
+    shapes.add(fillNoFill.set("fill",false));
     
     shapes.add(xOffset.set("xOffset",0,0,background.getWidth()));
     shapes.add(yOffset.set("yOffset",0,0,background.getHeight()));
