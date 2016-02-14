@@ -1,5 +1,7 @@
-ofxAnimatable
+ofxAssimpModelLoader
 ofxGui
 ofxOsc
-ofxPointCloud
 ofxSvg
+ofxAnimatable
+ofxPointCloud
+ofxPostProcessing

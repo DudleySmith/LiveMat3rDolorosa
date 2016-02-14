@@ -48,7 +48,7 @@ public:
     DofAltPass::Ptr     dofAltPass;
     RGBShiftPass::Ptr   rgbShiftPass;
     ZoomBlurPass::Ptr   zoomBlurPass;
-    HsbShiftPass::Ptr   hsbShiftPass;
+    //HsbShiftPass::Ptr   hsbShiftPass;
     //LUTPass::Ptr MyLUTPass;
     
     // GUI

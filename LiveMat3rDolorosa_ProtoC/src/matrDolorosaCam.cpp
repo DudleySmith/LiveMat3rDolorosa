@@ -13,26 +13,26 @@ void matrDolorosaCam::setup(){
     
     cam.setName("cam");
     
-    cam.add(camX.set("camX",0,-500,500));
-    cam.add(camY.set("camY",0,-500,500));
-    cam.add(camZ.set("camZ",1000,-1000,1000));
+    cam.add(camX.set("camX",0,-2000,2000));
+    cam.add(camY.set("camY",0,-2000,2000));
+    cam.add(camZ.set("camZ",1000,-2000,2000));
     
-    cam.add(targetX.set("targetX",0,-500,500));
-    cam.add(targetY.set("targetY",0,-500,500));
-    cam.add(targetZ.set("targetZ",0,-500,500));
+    cam.add(targetX.set("targetX",0,-2000,2000));
+    cam.add(targetY.set("targetY",0,-2000,2000));
+    cam.add(targetZ.set("targetZ",0,-2000,2000));
     
     
     cam.add(polarTheta.set("polarTheta",0,0,360));
     cam.add(polarPhi.set("polarPhi",0,0,360));
-    cam.add(polarRadius.set("polarRadius",1000,0,1000));
+    cam.add(polarRadius.set("polarRadius",1000,0,2000));
     
     panel.setup(cam);
     // by now needs to pass the gui parameter groups since the panel internally creates it's own group
     sync.setup((ofParameterGroup&)panel.getParameter(),8040,"localhost", 8041);
     
     camX.addListener(this, &matrDolorosaCam::xChanged);
-    camX.addListener(this, &matrDolorosaCam::yChanged);
-    camX.addListener(this, &matrDolorosaCam::zChanged);
+    camY.addListener(this, &matrDolorosaCam::yChanged);
+    camZ.addListener(this, &matrDolorosaCam::zChanged);
     
     polarPhi.addListener(this, &matrDolorosaCam::polarPhiChanged);
     polarTheta.addListener(this, &matrDolorosaCam::polarThetaChanged);
@@ -66,16 +66,16 @@ ofVec3f matrDolorosaCam::polarPos(){
 
 // -------------------------------------------
 void matrDolorosaCam::xChanged(float & xChange){
-    setPosition(camX, camY, camZ);
+    setGlobalPosition(camX, camY, camZ);
     setTarget(ofVec3f(targetX, targetY, targetZ));
 
 }
 void matrDolorosaCam::yChanged(float & yChange){
-    setPosition(camX, camY, camZ);
+    setGlobalPosition(camX, camY, camZ);
     setTarget(ofVec3f(targetX, targetY, targetZ));
 }
 void matrDolorosaCam::zChanged(float & zChange){
-    setPosition(camX, camY, camZ);
+    setGlobalPosition(camX, camY, camZ);
     setTarget(ofVec3f(targetX, targetY, targetZ));
 }
 

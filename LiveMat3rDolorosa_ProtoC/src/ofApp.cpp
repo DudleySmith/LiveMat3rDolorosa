@@ -27,6 +27,9 @@ void ofApp::setup(){
     postFx.setup();
     
     // ------------------------------------
+    meshes.setup();
+    
+    // ------------------------------------
     panel.setup();
     panel.add(drawUI.set("drawUI", true));
     panel.add(redrawShapes.set("redrawShapes", false));
@@ -36,9 +39,10 @@ void ofApp::setup(){
     panel.setPosition(10, 10);
     shapes.panel.setPosition(210, 10);
     pointCloud.panelAnims.setPosition(420, 10);
-    pointCloud.panelDraws.setPosition(420, 410);
+    pointCloud.panelDraws.setPosition(420, 290);
     cam.panel.setPosition(630, 10);
-    postFx.panel.setPosition(840, 10);
+    postFx.panel.setPosition(630, 210);
+    meshes.panel.setPosition(10, 90);
     
 }
 
@@ -102,6 +106,8 @@ void ofApp::draw(){
     // ------------------------------------
     pointCloud.draw(shapes.background);
     
+    // ------------------------------------
+    meshes.draw();
 
     cam.end();
     postFx.post.end();
@@ -117,6 +123,7 @@ void ofApp::draw(){
         shapes.panel.draw();
         postFx.panel.draw();
         cam.panel.draw();
+        meshes.panel.draw();
     }
     
 }
