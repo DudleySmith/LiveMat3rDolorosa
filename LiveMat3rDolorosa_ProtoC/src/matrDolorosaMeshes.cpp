@@ -45,7 +45,7 @@ void matrDolorosaMeshes::draw(){
     
     // Whole MATRIX Because Mesh is Upside Down
     ofPushMatrix();
-    ofScale(0.25);
+    ofScale(0.25, 0.25, 0.25);
     ofRotateX(180);
     
     if(drawFaces){

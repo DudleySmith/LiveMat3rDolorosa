@@ -1,8 +1,10 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofxPointCloud.h"
+
 #include "ofxGui.h"
+#include "ofxPointCloud.h"
+#include "ofxSyphon.h"
 
 #include "matrDolorosaShapes.h"
 #include "matrDolorosaCam.h"
@@ -41,5 +43,9 @@ public:
     ofParameter<bool> redrawShapes;
     ofParameter<bool> drawMarks;
     ofParameter<bool> drawUI;
+    
+    // Syphon output
+    ofxSyphonServer syphonServer;
+    void setupSyphon();
     
 };

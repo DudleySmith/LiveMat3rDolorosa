@@ -28,6 +28,9 @@ void ofApp::setup(){
     
     // ------------------------------------
     meshes.setup();
+ 
+    // ------------------------------------
+    syphonServer.setName("matrDolorosaGenerative");
     
     // ------------------------------------
     panel.setup();
@@ -45,7 +48,6 @@ void ofApp::setup(){
     meshes.panel.setPosition(10, 90);
     
 }
-
 
 //--------------------------------------------------------------
 void ofApp::update(){
@@ -111,6 +113,9 @@ void ofApp::draw(){
 
     cam.end();
     postFx.post.end();
+    
+    // Publish syphon before GUI ;)
+    syphonServer.publishScreen();
     
     // ------------------------------------
     if(drawUI){
