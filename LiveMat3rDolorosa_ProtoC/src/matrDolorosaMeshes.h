@@ -17,6 +17,7 @@ class matrDolorosaMeshes{
 
 public:
     void setup();
+    void update();
     void draw();
 
     ofxPanel panel;

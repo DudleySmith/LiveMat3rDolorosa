@@ -63,6 +63,9 @@ void ofApp::update(){
     postFx.update();
     
     // ------------------------------------
+    meshes.update();
+    
+    // ------------------------------------
     cam.update();
 }
 
@@ -135,6 +138,8 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
+    
+    // Hide UI -----------------------------------------------
     if(key == 'h'){
         if(drawUI == true){
             drawUI = false;
@@ -142,6 +147,14 @@ void ofApp::keyPressed(int key){
             drawUI = true;
         }
     }
+    
+    // Take a picture ------------------------------------------
+    if(key == 's'){
+        ofImage grab;
+        grab.grabScreen(0, 0, ofGetWidth(), ofGetHeight());
+        grab.save(ofGetTimestampString()+".jpg");
+    }
+    
 }
 
 //--------------------------------------------------------------

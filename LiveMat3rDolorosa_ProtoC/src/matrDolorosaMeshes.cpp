@@ -29,7 +29,7 @@ void matrDolorosaMeshes::setup(){
     meshes.add(drawFaces.set("drawFaces",false));
     meshes.add(drawWireframe.set("drawWireframe",true));
     meshes.add(faceColor.set("faceColor",ofColor(255),ofColor(0,0),ofColor(255)));
-    meshes.add(faceColor.set("faceColor",ofColor(255),ofColor(0,0),ofColor(255)));
+    meshes.add(wireColor.set("wireColor",ofColor(255),ofColor(0,0),ofColor(255)));
     meshes.add(lineWidth.set("lineWidth",1,0,10));
     
     panel.setup(meshes);
@@ -38,6 +38,11 @@ void matrDolorosaMeshes::setup(){
     
     
     
+}
+
+//--------------------------------------------------------------
+void matrDolorosaMeshes::update(){
+    sync.update();
 }
 
 //--------------------------------------------------------------

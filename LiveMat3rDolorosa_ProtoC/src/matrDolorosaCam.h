@@ -30,11 +30,15 @@ public:
     void polarThetaChanged(float & polarThetaChange);
     void polarRadiusChanged(float & polarRadiusChange);
     
+    void sendAKeyPressed(bool & sendAKeyPress);
+    
     ofVec3f polarPos();
     
     ofxPanel panel;
     ofxOscParameterSync sync;
     ofParameterGroup cam;
+    
+    ofParameter<bool>   sendAKey;
     
     ofParameter<float>  camX;
     ofParameter<float>  camY;
@@ -48,5 +52,6 @@ public:
     ofParameter<float>  targetY;
     ofParameter<float>  targetZ;
     
+    bool camDriveValues;
 
 };

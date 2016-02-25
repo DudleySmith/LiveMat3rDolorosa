@@ -20,7 +20,7 @@ void matrDolorosaShapes::setup(){
     
     shapes.add(drawFbo.set("drawFbo",true));
     shapes.add(drawAs3D.set("drawAs3D",false));
-    shapes.add(rootDriver.set("rootDriver",0, 0, 1));
+    shapes.add(rootDriver.set("rootDriver",0.0, 0.0, 1.0));
     
     shapes.add(alphaTrails.set("alphaTrails",20,0,255));
     shapes.add(lineWidth.set("lineWidth",1,0,10));

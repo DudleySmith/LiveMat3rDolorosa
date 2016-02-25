@@ -5,6 +5,12 @@
       location = "container:"
       name = "example">
       <FileRef
+         location = "group:../../examples/gui/guiFromParametersExample/guiFromParametersExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/addons/oscReceiveExample/oscReceiveExample.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:../../addons/ofxSyphon/example-Basic/example-Basic.xcodeproj">
       </FileRef>
       <FileRef
