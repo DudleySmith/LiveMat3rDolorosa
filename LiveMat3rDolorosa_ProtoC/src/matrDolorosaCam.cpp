@@ -135,7 +135,7 @@ void matrDolorosaCam::polarRadiusChanged(float & polarRadiusChange){
 // -------------------------------------------
 void matrDolorosaCam::sendAKeyPressed(bool & sendAKeyPress){
     
-    if(sendAKeyPress == true){
+    if(sendAKey == true){
         
         camX = getGlobalPosition().x;
         camY = getGlobalPosition().y;
@@ -145,7 +145,9 @@ void matrDolorosaCam::sendAKeyPressed(bool & sendAKeyPress){
         targetY = getTarget().getGlobalPosition().y;
         targetZ = getTarget().getGlobalPosition().z;
         
-        sendAKeyPress = false;
+        sendAKey = false;
+        
+        sync.update();
         
     }
 }

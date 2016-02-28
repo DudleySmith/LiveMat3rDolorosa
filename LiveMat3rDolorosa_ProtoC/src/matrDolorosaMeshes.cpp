@@ -27,7 +27,7 @@ void matrDolorosaMeshes::setup(){
     meshes.setName("meshes");
     
     meshes.add(drawFaces.set("drawFaces",false));
-    meshes.add(drawWireframe.set("drawWireframe",true));
+    meshes.add(drawWireframe.set("drawWireframe",false));
     meshes.add(faceColor.set("faceColor",ofColor(255),ofColor(0,0),ofColor(255)));
     meshes.add(wireColor.set("wireColor",ofColor(255),ofColor(0,0),ofColor(255)));
     meshes.add(lineWidth.set("lineWidth",1,0,10));
