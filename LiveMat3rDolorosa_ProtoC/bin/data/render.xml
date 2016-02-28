@@ -1,0 +1,15 @@
+<render>
+	<dofAltPassEnable>0</dofAltPassEnable>
+	<dofAltFocalDepth>1</dofAltFocalDepth>
+	<dofAltfocalLength>1</dofAltfocalLength>
+	<dofAltStop>5</dofAltStop>
+	<dofAltShowFocus>0</dofAltShowFocus>
+	<rgbShiftEnable>1</rgbShiftEnable>
+	<rgbShiftAmount>0.0065</rgbShiftAmount>
+	<rgbShiftAngle>39.6</rgbShiftAngle>
+	<zoomBlurEnable>1</zoomBlurEnable>
+	<zoomBlurExposure>0.56</zoomBlurExposure>
+	<zoomBlurDecay>0.82</zoomBlurDecay>
+	<zoomBlurDensity>0.16</zoomBlurDensity>
+	<zoomBlurWeight>0.39</zoomBlurWeight>
+</render>

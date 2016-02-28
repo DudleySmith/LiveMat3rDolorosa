@@ -2,7 +2,8 @@
 # IDE
 #########################
 
-*/bin*/
+*/bin/*.app
+*/bin/*/*.c4d
 
 #########################
 # IDE
@@ -36,3 +37,4 @@ xcuserdata
 .mailmap
 /apps*/
 
+Iconr
