@@ -35,7 +35,8 @@ void matrDolorosaPostFX::setup(){
     
     // by now needs to pass the gui parameter groups since the panel internally creates it's own group
     sync.setup((ofParameterGroup&)panel.getParameter(),8050,"localhost", 8051);
-
+    panel.loadFromFile("render.xml");
+    
     // INIT PASSES --------------------------------------
     
     int w = ofGetWidth();

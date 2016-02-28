@@ -17,21 +17,35 @@ class matrDolorosaMeshes{
 
 public:
     void setup();
+    void addMesh(string meshFile);
+    
     void update();
+    
     void draw();
-
+    void drawFaces();
+    void drawWireframe();
+        
     ofxPanel panel;
     
 private:
     
     ofxAssimpModelLoader loader;
-    ofMesh mesh;
-
-    ofxOscParameterSync sync;
-    ofParameterGroup meshes;
+    vector<ofMesh> allMeshes;
     
-    ofParameter<bool>   drawFaces;
-    ofParameter<bool>   drawWireframe;
+    ofxOscParameterSync sync;
+    ofParameterGroup meshesPG;
+    
+    ofParameter<bool>   bDrawFaces;
+    ofParameter<bool>   bDrawWireframe;
+    
+    ofParameter<bool>   bDrawMeshOne;
+    ofParameter<bool>   bDrawMeshTwo;
+    ofParameter<bool>   bDrawMeshThree;
+    ofParameter<bool>   bDrawMeshFour;
+    ofParameter<bool>   bDrawMeshFive;
+    ofParameter<bool>   bDrawMeshSix;
+    
+    
     ofParameter<ofColor>   faceColor;
     ofParameter<ofColor>   wireColor;
     ofParameter<float>  lineWidth;

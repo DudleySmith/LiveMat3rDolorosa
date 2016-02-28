@@ -40,6 +40,7 @@ public:
     matrDolorosaMeshes  meshes;
 
     ofxPanel          panel;
+    ofParameterGroup  main;
     ofParameter<bool> redrawShapes;
     ofParameter<bool> drawMarks;
     ofParameter<bool> drawUI;

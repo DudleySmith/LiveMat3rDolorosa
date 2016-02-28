@@ -5,6 +5,12 @@
       location = "container:"
       name = "example">
       <FileRef
+         location = "group:../../examples/gui/parameterGroupExample/parameterGroupExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/gui/guiExample/guiExample.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:../../examples/gui/guiFromParametersExample/guiFromParametersExample.xcodeproj">
       </FileRef>
       <FileRef

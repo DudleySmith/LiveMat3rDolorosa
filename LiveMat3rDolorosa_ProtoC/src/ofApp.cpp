@@ -33,10 +33,12 @@ void ofApp::setup(){
     syphonServer.setName("matrDolorosaGenerative");
     
     // ------------------------------------
-    panel.setup();
-    panel.add(drawUI.set("drawUI", true));
-    panel.add(redrawShapes.set("redrawShapes", false));
-    panel.add(drawMarks.set("drawMarks", false));
+    main.setName("main");
+    main.add(drawUI.set("drawUI", true));
+    main.add(redrawShapes.set("redrawShapes", false));
+    main.add(drawMarks.set("drawMarks", false));
+    
+    panel.setup(main);
     panel.loadFromFile("main.xml");
     
     panel.setPosition(10, 10);
