@@ -10,6 +10,7 @@
 #include "matrDolorosaCam.h"
 #include "matrDolorosaPostFX.h"
 #include "matrDolorosaMeshes.h"
+#include "matrDolorosaPies.h"
 
 class ofApp : public ofBaseApp{
     
@@ -38,6 +39,7 @@ public:
     matrDolorosaShapes  shapes;
     matrDolorosaPostFX  postFx;
     matrDolorosaMeshes  meshes;
+    matrDolorosaPies    pies;
 
     ofxPanel          panel;
     ofParameterGroup  main;

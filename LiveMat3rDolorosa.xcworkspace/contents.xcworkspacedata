@@ -27,6 +27,9 @@
       </FileRef>
    </Group>
    <FileRef
+      location = "group:LiveMat3rDolorosa_NodeFieldExample/LiveMat3rDolorosa_NodeFieldExample.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:LiveMat3rDolorosa_ProtoA/LiveMat3rDolorosa_ProtoA.xcodeproj">
    </FileRef>
    <FileRef
