@@ -11,6 +11,7 @@
 #include "matrDolorosaPostFX.h"
 #include "matrDolorosaMeshes.h"
 #include "matrDolorosaPies.h"
+#include "matrDolorosaNodeField.h"
 
 class ofApp : public ofBaseApp{
     
@@ -36,10 +37,11 @@ public:
     matrDolorosaCam cam;
     //ofEasyCam cam;
     
-    matrDolorosaShapes  shapes;
-    matrDolorosaPostFX  postFx;
-    matrDolorosaMeshes  meshes;
-    matrDolorosaPies    pies;
+    matrDolorosaShapes      shapes;
+    matrDolorosaPostFX      postFx;
+    matrDolorosaMeshes      meshes;
+    matrDolorosaPies        pies;
+    matrDolorosaNodeField   field;
 
     ofxPanel          panel;
     ofParameterGroup  main;

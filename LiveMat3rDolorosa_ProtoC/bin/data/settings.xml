@@ -1,0 +1,17 @@
+<field>
+	<nbNodes>150</nbNodes>
+	<xyLinks>0</xyLinks>
+	<circleSize>0</circleSize>
+	<distance>320</distance>
+	<entropyBig>13</entropyBig>
+	<entropyFine>0.1</entropyFine>
+	<xLimit>1000</xLimit>
+	<yLimit>615</yLimit>
+	<zLimit>565</zLimit>
+	<sphereLimit>0</sphereLimit>
+	<exRadius>450</exRadius>
+	<inRadius>0</inRadius>
+	<faceColor>0, 0, 0, 255</faceColor>
+	<wireColor>255, 255, 255, 255</wireColor>
+<field/>
+</field>

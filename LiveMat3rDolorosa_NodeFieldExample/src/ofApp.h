@@ -33,4 +33,6 @@ class ofApp : public ofBaseApp{
     
     ofParameter<int>  nbNodes;
     
+    bool grab;
+    
 };

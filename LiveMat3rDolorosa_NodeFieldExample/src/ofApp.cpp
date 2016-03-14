@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    ofBackground(252);
+    ofBackground(0);
     field.setup();
     //smooth(8);
 }
@@ -17,10 +17,14 @@ void ofApp::draw(){
     
     cam.begin();
 
-    ofSetColor(252,150);
-    ofDrawRectangle(0,0,ofGetWidth(),ofGetHeight());
-    
     field.draw();
+    
+    if(grab==true){
+    ofImage myScreen;
+    myScreen.grabScreen(0, 0, ofGetWidth(), ofGetHeight());
+    myScreen.save(ofGetTimestampString()+".jpg");
+        grab = false;
+    }
     
     cam.end();
     
@@ -30,6 +34,12 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
+
+    // Take a picture ------------------------------------------
+    if(key == 's'){
+        grab = true;
+    }
+    
 
 }
 

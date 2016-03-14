@@ -80,6 +80,7 @@
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 		EA83B9BF1C8622440000AF1C /* ofxPie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA83B9BD1C8622440000AF1C /* ofxPie.cpp */; };
 		EA83B9C21C86225D0000AF1C /* matrDolorosaPies.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA83B9C01C86225D0000AF1C /* matrDolorosaPies.cpp */; };
+		EA9C7AED1C96E7E000D55779 /* matrDolorosaNodeField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9C7AEB1C96E7E000D55779 /* matrDolorosaNodeField.cpp */; };
 		F285EB3169F1566CA3D93C20 /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E112B3AEBEA2C091BF2B40AE /* ofxPanel.cpp */; };
 /* End PBXBuildFile section */
 
@@ -290,6 +291,9 @@
 		EA83B9C01C86225D0000AF1C /* matrDolorosaPies.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrDolorosaPies.cpp; sourceTree = "<group>"; };
 		EA83B9C11C86225D0000AF1C /* matrDolorosaPies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrDolorosaPies.h; sourceTree = "<group>"; };
 		EA83DF139B3F2085C1A56C49 /* ofxAssimpAnimation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAssimpAnimation.h; path = ../../../addons/ofxAssimpModelLoader/src/ofxAssimpAnimation.h; sourceTree = SOURCE_ROOT; };
+		EA9C7AEA1C96E7E000D55779 /* matrDolorosaNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrDolorosaNode.h; path = ../../Commons/matrDolorosaNode.h; sourceTree = "<group>"; };
+		EA9C7AEB1C96E7E000D55779 /* matrDolorosaNodeField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = matrDolorosaNodeField.cpp; path = ../../Commons/matrDolorosaNodeField.cpp; sourceTree = "<group>"; };
+		EA9C7AEC1C96E7E000D55779 /* matrDolorosaNodeField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrDolorosaNodeField.h; path = ../../Commons/matrDolorosaNodeField.h; sourceTree = "<group>"; };
 		ECF8674C7975F1063C5E30CA /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxGuiGroup.cpp; path = ../../../addons/ofxGui/src/ofxGuiGroup.cpp; sourceTree = SOURCE_ROOT; };
 		EDE55D82BD962DAC0E94B708 /* ofxAssimpModelLoader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxAssimpModelLoader.cpp; path = ../../../addons/ofxAssimpModelLoader/src/ofxAssimpModelLoader.cpp; sourceTree = SOURCE_ROOT; };
 		EED8C389555EA379BDFA5BD5 /* Logger.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Logger.hpp; path = ../../../addons/ofxAssimpModelLoader/libs/assimp/include/assimp/Logger.hpp; sourceTree = SOURCE_ROOT; };
@@ -774,6 +778,9 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				EA9C7AEA1C96E7E000D55779 /* matrDolorosaNode.h */,
+				EA9C7AEB1C96E7E000D55779 /* matrDolorosaNodeField.cpp */,
+				EA9C7AEC1C96E7E000D55779 /* matrDolorosaNodeField.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
@@ -964,6 +971,7 @@
 				5864AD82E20F15536D054EA3 /* ofxOscMessage.cpp in Sources */,
 				4ADB88E2FB52E76A471065DE /* ofxOscParameterSync.cpp in Sources */,
 				640279EE111671BD026CB013 /* ofxOscReceiver.cpp in Sources */,
+				EA9C7AED1C96E7E000D55779 /* matrDolorosaNodeField.cpp in Sources */,
 				8F5205AEF8861EF234F0651A /* ofxOscSender.cpp in Sources */,
 				ADE367465D2A8EBAD4C7A8D9 /* IpEndpointName.cpp in Sources */,
 				67FE4C7B15C2F0478C8126C2 /* NetworkingUtils.cpp in Sources */,

@@ -28,7 +28,10 @@ void ofApp::setup(){
     
     // ------------------------------------
     meshes.setup();
- 
+    
+    // ------------------------------------
+    field.setup();
+    
     // ------------------------------------
     syphonServer.setName("matrDolorosaGenerative");
     
@@ -42,12 +45,13 @@ void ofApp::setup(){
     panel.loadFromFile("main.xml");
     
     panel.setPosition(10, 10);
+    meshes.panel.setPosition(10, 90);
     shapes.panel.setPosition(210, 10);
     pointCloud.panelAnims.setPosition(420, 10);
     pointCloud.panelDraws.setPosition(420, 290);
     cam.panel.setPosition(630, 10);
-    postFx.panel.setPosition(630, 210);
-    meshes.panel.setPosition(10, 90);
+    postFx.panel.setPosition(630, 220);
+    field.panel.setPosition(850, 10);
     
 }
 
@@ -66,6 +70,9 @@ void ofApp::update(){
     
     // ------------------------------------
     meshes.update();
+    
+    // ------------------------------------
+    field.update();
     
     // ------------------------------------
     cam.update();
@@ -119,6 +126,9 @@ void ofApp::draw(){
     // ------------------------------------
     //pies.draw();
     
+    // ------------------------------------
+    field.draw();
+    
     cam.end();
     postFx.post.end();
     
@@ -128,7 +138,7 @@ void ofApp::draw(){
     // ------------------------------------
     if(drawUI){
     
-        ofDrawBitmapString(ofToString(ofGetFrameRate()),20,20);
+        ofDrawBitmapString(ofToString(ofGetFrameRate()),20,ofGetHeight() - 20);
         
         panel.draw();
         pointCloud.panelAnims.draw();
@@ -137,6 +147,8 @@ void ofApp::draw(){
         postFx.panel.draw();
         cam.panel.draw();
         meshes.panel.draw();
+        field.panel.draw();
+        
     }
     
 }
