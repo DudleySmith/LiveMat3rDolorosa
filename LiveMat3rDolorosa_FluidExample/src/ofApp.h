@@ -3,6 +3,8 @@
 #include "ofMain.h"
 #include "matrDolorosaFluid.h"
 
+#include "matrDolorosaCircles.h"
+
 class ofApp : public ofBaseApp{
 	public:
 		void setup();
@@ -21,7 +23,9 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-    matrDolorosaFluid fluid;
+    matrDolorosaFluid   fluid;
+    matrDolorosaCircles circles;
+    
     ofEasyCam cam;
     
 public:
@@ -37,5 +41,7 @@ private:
     ofPoint onePoint;
     ofPoint oneSens;
     ofPoint oneVel;
+    
+
     
 };

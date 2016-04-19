@@ -15,6 +15,7 @@
 #include "ofxOscParameterSync.h"
 
 class matrDolorosaFluid {
+    
 public:
     void setup();
     void update();

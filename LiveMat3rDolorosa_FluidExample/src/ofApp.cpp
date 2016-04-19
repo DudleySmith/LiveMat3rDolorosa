@@ -22,6 +22,8 @@ void ofApp::setup(){
     panel.setPosition(10, 25);
     fluid.panel.setPosition(10, 100);
     
+    circles.setup();
+    
 }
 
 //--------------------------------------------------------------
@@ -37,7 +39,12 @@ void ofApp::update(){
     if(onePoint.y > ofGetHeight() || onePoint.y < 0)
         oneSens.y *= -1;
     
-    fluid.addToFluid(onePoint / ofGetWindowSize(), oneVel / ofGetWindowSize(), true, true);
+    // ----------------
+    float ratio = fmod(ofGetElapsedTimeMillis(), 10000) / 10000;
+    circles.update(ratio);
+    
+    //fluid.addToFluid(onePoint / ofGetWindowSize(), oneVel / ofGetWindowSize(), true, true);
+    fluid.addToFluid(circles.points[0], circles.speeds[0], true, true);
     
     fluid.update();
     
@@ -48,8 +55,15 @@ void ofApp::draw(){
     
     // --------------------------------------------------------------------------
     ofDrawCircle(onePoint.x, onePoint.y, 5.0);
+    
     // --------------------------------------------------------------------------
     fluid.draw();
+    
+    // --------------------------------------------------------------------------
+    ofPushStyle();
+    ofSetColor(ofColor::seaShell);
+    circles.draw();
+    ofPopStyle();
     
     // --------------------------------------------------------------------------
     ofDrawBitmapString(ofToString(ofGetFrameRate()), 10, 10);

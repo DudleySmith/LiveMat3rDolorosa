@@ -55,6 +55,8 @@
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 		EA6F0CE31CBFB5010034CE9E /* matrDolorosaFluid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA6F0CE11CBFB5010034CE9E /* matrDolorosaFluid.cpp */; };
+		EA957B8F1CC6A59300D4E93A /* matrDolorosaCircles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA957B8D1CC6A59300D4E93A /* matrDolorosaCircles.cpp */; };
+		EA957B921CC6A6A500D4E93A /* matrDolorosaCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA957B901CC6A6A500D4E93A /* matrDolorosaCircle.cpp */; };
 		F285EB3169F1566CA3D93C20 /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E112B3AEBEA2C091BF2B40AE /* ofxPanel.cpp */; };
 /* End PBXBuildFile section */
 
@@ -203,6 +205,10 @@
 		E9AA5FD1EDF04CD1F5FB1686 /* Particle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Particle.cpp; path = src/Particle.cpp; sourceTree = SOURCE_ROOT; };
 		EA6F0CE11CBFB5010034CE9E /* matrDolorosaFluid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = matrDolorosaFluid.cpp; path = ../../Commons/matrDolorosaFluid.cpp; sourceTree = "<group>"; };
 		EA6F0CE21CBFB5010034CE9E /* matrDolorosaFluid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrDolorosaFluid.h; path = ../../Commons/matrDolorosaFluid.h; sourceTree = "<group>"; };
+		EA957B8D1CC6A59300D4E93A /* matrDolorosaCircles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = matrDolorosaCircles.cpp; path = ../../Commons/matrDolorosaCircles.cpp; sourceTree = "<group>"; };
+		EA957B8E1CC6A59300D4E93A /* matrDolorosaCircles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrDolorosaCircles.h; path = ../../Commons/matrDolorosaCircles.h; sourceTree = "<group>"; };
+		EA957B901CC6A6A500D4E93A /* matrDolorosaCircle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = matrDolorosaCircle.cpp; path = ../../Commons/matrDolorosaCircle.cpp; sourceTree = "<group>"; };
+		EA957B911CC6A6A500D4E93A /* matrDolorosaCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrDolorosaCircle.h; path = ../../Commons/matrDolorosaCircle.h; sourceTree = "<group>"; };
 		ECF8674C7975F1063C5E30CA /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxGuiGroup.cpp; path = ../../../addons/ofxGui/src/ofxGuiGroup.cpp; sourceTree = SOURCE_ROOT; };
 		EF872612718328680A4B9D64 /* MSACoreCommon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSACoreCommon.h; path = ../../../addons/ofxMSACore/src/MSACoreCommon.h; sourceTree = SOURCE_ROOT; };
 		F00F43571A0306A6B30BCCB2 /* ofxSimpleGuiButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiButton.h; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiButton.h; sourceTree = SOURCE_ROOT; };
@@ -539,6 +545,10 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				EA957B901CC6A6A500D4E93A /* matrDolorosaCircle.cpp */,
+				EA957B911CC6A6A500D4E93A /* matrDolorosaCircle.h */,
+				EA957B8D1CC6A59300D4E93A /* matrDolorosaCircles.cpp */,
+				EA957B8E1CC6A59300D4E93A /* matrDolorosaCircles.h */,
 				EA6F0CE11CBFB5010034CE9E /* matrDolorosaFluid.cpp */,
 				EA6F0CE21CBFB5010034CE9E /* matrDolorosaFluid.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
@@ -718,10 +728,12 @@
 				76F1472575BCCA088FE3454B /* ofxSimpleGuiSlider2d.cpp in Sources */,
 				CF142A7D9914B99E6E287052 /* ofxSimpleGuiTitle.cpp in Sources */,
 				3317B76EE9202B4C6482D15C /* ofxSimpleGuiToggle.cpp in Sources */,
+				EA957B8F1CC6A59300D4E93A /* matrDolorosaCircles.cpp in Sources */,
 				06980FF65ED01AFE2BCAAD5E /* ofxSimpleGuiConfig.cpp in Sources */,
 				8CE60C8F4001811D5B27D0F8 /* ofxSimpleGuiControl.cpp in Sources */,
 				1F910DCF02326B0E25059352 /* ofxSimpleGuiPage.cpp in Sources */,
 				C2ED558D391BA9692D3BF705 /* ofxSimpleGuiToo.cpp in Sources */,
+				EA957B921CC6A6A500D4E93A /* matrDolorosaCircle.cpp in Sources */,
 				7F8D13CD42F89D3284829CF0 /* ofxSimpleGuiValueControl.cpp in Sources */,
 				63B57AC5BF4EF088491E0317 /* ofxXmlSettings.cpp in Sources */,
 				933A2227713C720CEFF80FD9 /* tinyxml.cpp in Sources */,
