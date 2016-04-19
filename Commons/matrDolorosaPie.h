@@ -8,15 +8,12 @@
 
 #pragma once
 
-#include "ofxPie.h"
+#include "ofMain.h"
 
-class matrDolorosaPies {
-
+class matrDolorosaPie {
+    
 public:
     void update();
-    void draw();
-
-private:
-    ofxPie myPie;
+    void draw(float x,float y, float radius, float lowAngle, float highAngle, bool closed, bool radians);
     
 };

@@ -78,8 +78,8 @@
 		E4797F1786BE22985F7EE55F /* RGBShiftPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5201F6A7A19258B7F1CA2E43 /* RGBShiftPass.cpp */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+		EA8310011C99DEF5001E992C /* matrDolorosaPies.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA830FFF1C99DEF5001E992C /* matrDolorosaPies.cpp */; };
 		EA83B9BF1C8622440000AF1C /* ofxPie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA83B9BD1C8622440000AF1C /* ofxPie.cpp */; };
-		EA83B9C21C86225D0000AF1C /* matrDolorosaPies.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA83B9C01C86225D0000AF1C /* matrDolorosaPies.cpp */; };
 		EA9C7AED1C96E7E000D55779 /* matrDolorosaNodeField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9C7AEB1C96E7E000D55779 /* matrDolorosaNodeField.cpp */; };
 		F285EB3169F1566CA3D93C20 /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E112B3AEBEA2C091BF2B40AE /* ofxPanel.cpp */; };
 /* End PBXBuildFile section */
@@ -286,10 +286,10 @@
 		E84ADD8443D82E35430385B7 /* RimHighlightingPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = RimHighlightingPass.h; path = ../../../addons/ofxPostProcessing/src/RimHighlightingPass.h; sourceTree = SOURCE_ROOT; };
 		E91F55DEDD14B7F4BACED9B4 /* ofxSvg.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSvg.h; path = ../../../addons/ofxSvg/src/ofxSvg.h; sourceTree = SOURCE_ROOT; };
 		EA2A13781712672758AFD432 /* DofAltPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DofAltPass.h; path = ../../../addons/ofxPostProcessing/src/DofAltPass.h; sourceTree = SOURCE_ROOT; };
+		EA830FFF1C99DEF5001E992C /* matrDolorosaPies.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = matrDolorosaPies.cpp; path = ../../Commons/matrDolorosaPies.cpp; sourceTree = "<group>"; };
+		EA8310001C99DEF5001E992C /* matrDolorosaPies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrDolorosaPies.h; path = ../../Commons/matrDolorosaPies.h; sourceTree = "<group>"; };
 		EA83B9BD1C8622440000AF1C /* ofxPie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPie.cpp; sourceTree = "<group>"; };
 		EA83B9BE1C8622440000AF1C /* ofxPie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPie.h; sourceTree = "<group>"; };
-		EA83B9C01C86225D0000AF1C /* matrDolorosaPies.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matrDolorosaPies.cpp; sourceTree = "<group>"; };
-		EA83B9C11C86225D0000AF1C /* matrDolorosaPies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrDolorosaPies.h; sourceTree = "<group>"; };
 		EA83DF139B3F2085C1A56C49 /* ofxAssimpAnimation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAssimpAnimation.h; path = ../../../addons/ofxAssimpModelLoader/src/ofxAssimpAnimation.h; sourceTree = SOURCE_ROOT; };
 		EA9C7AEA1C96E7E000D55779 /* matrDolorosaNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrDolorosaNode.h; path = ../../Commons/matrDolorosaNode.h; sourceTree = "<group>"; };
 		EA9C7AEB1C96E7E000D55779 /* matrDolorosaNodeField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = matrDolorosaNodeField.cpp; path = ../../Commons/matrDolorosaNodeField.cpp; sourceTree = "<group>"; };
@@ -778,6 +778,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				EA830FFF1C99DEF5001E992C /* matrDolorosaPies.cpp */,
+				EA8310001C99DEF5001E992C /* matrDolorosaPies.h */,
 				EA9C7AEA1C96E7E000D55779 /* matrDolorosaNode.h */,
 				EA9C7AEB1C96E7E000D55779 /* matrDolorosaNodeField.cpp */,
 				EA9C7AEC1C96E7E000D55779 /* matrDolorosaNodeField.h */,
@@ -792,8 +794,6 @@
 				5DFB23DD087C2DA4B45076F3 /* matrDolorosaPostFX.h */,
 				52031C77FCD4C3793BF2821B /* matrDolorosaShapes.cpp */,
 				4833D22A7F6D1E4260AFF047 /* matrDolorosaShapes.h */,
-				EA83B9C01C86225D0000AF1C /* matrDolorosaPies.cpp */,
-				EA83B9C11C86225D0000AF1C /* matrDolorosaPies.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -949,6 +949,7 @@
 				86160D93B39E2A1FD8E5EFB3 /* matrDolorosaCam.cpp in Sources */,
 				31F9458520A0EC43C6263ADE /* matrDolorosaMeshes.cpp in Sources */,
 				0702A4A92504820B6D40BC6A /* matrDolorosaPostFX.cpp in Sources */,
+				EA8310011C99DEF5001E992C /* matrDolorosaPies.cpp in Sources */,
 				D6A249A58EAD820A83DB8477 /* matrDolorosaShapes.cpp in Sources */,
 				52C77060FBB9307AEFDAE8C6 /* ofxAnimatable.cpp in Sources */,
 				5D067CF087427621DD1E64B8 /* ofxAnimatableFloat.cpp in Sources */,
@@ -1009,7 +1010,6 @@
 				B88A57B4B0BA6191EF3571E9 /* ofxSvg.cpp in Sources */,
 				6A565A9714A6A12EB9098F52 /* src_colors.cpp in Sources */,
 				1D6B78EF041B097CE4F423C4 /* svgtiny.cpp in Sources */,
-				EA83B9C21C86225D0000AF1C /* matrDolorosaPies.cpp in Sources */,
 				4294163B15857489B2176769 /* svgtiny_gradient.cpp in Sources */,
 				1B5F996886A777589D5DD794 /* svgtiny_list.cpp in Sources */,
 				1F558B76FB3412843DDAA031 /* ofxSyphonClient.mm in Sources */,

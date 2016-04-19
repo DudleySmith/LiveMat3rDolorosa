@@ -5,6 +5,9 @@
       location = "container:"
       name = "example">
       <FileRef
+         location = "group:../../addons/ofxMSAFluid/ofxMSAFluidExample/ofxMSAFluidExample.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:../../examples/gui/parameterGroupExample/parameterGroupExample.xcodeproj">
       </FileRef>
       <FileRef
@@ -26,6 +29,12 @@
          location = "group:../../examples/addons/oscReceiveExample/oscReceiveExample.xcodeproj">
       </FileRef>
    </Group>
+   <FileRef
+      location = "group:LiveMat3rDolorosa_FluidExample/LiveMat3rDolorosa_FluidExample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LiveMat3rDolorosa_PiesExample/LiveMat3rDolorosa_PiesExample.xcodeproj">
+   </FileRef>
    <FileRef
       location = "group:LiveMat3rDolorosa_NodeFieldExample/LiveMat3rDolorosa_NodeFieldExample.xcodeproj">
    </FileRef>

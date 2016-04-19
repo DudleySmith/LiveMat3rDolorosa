@@ -24,18 +24,18 @@ void matrDolorosaNodeField::setup() {
     field.add(yLimit.set("yLimit",200, 0, 1000));
     field.add(zLimit.set("zLimit",200, 0, 1000));
     
-    field.add(sphereLimit.set("sphereLimit",false));
+    field.add(sphereLimit.set("sphereLimit",true));
     field.add(exRadius.set("exRadius",200, 0, 1000));
-    field.add(inRadius.set("inRadius",200, 0, 1000));
+    field.add(inRadius.set("inRadius",0, 0, 1000));
     
-    field.add(sphereColor.set("faceColor",ofColor(0),ofColor(0,0),ofColor(255)));
-    field.add(linkColor.set("wireColor",ofColor(0),ofColor(0,0),ofColor(255)));
+    field.add(sphereColor.set("faceColor",ofColor(255),ofColor(0,0),ofColor(255)));
+    field.add(linkColor.set("wireColor",ofColor(255),ofColor(0,0),ofColor(255)));
 
     panel.setup(field);
     panel.loadFromFile("field.xml");
     
     // by now needs to pass the gui parameter groups since the panel internally creates it's own group
-    sync.setup((ofParameterGroup&)panel.getParameter(),8060,"localhost", 8061);
+    sync.setup((ofParameterGroup&)panel.getParameter(),8070,"localhost", 8071);
     
     generateNodes(nodeAmountMax);
     
