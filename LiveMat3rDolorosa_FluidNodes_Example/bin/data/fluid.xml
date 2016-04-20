@@ -1,0 +1,18 @@
+<fluid>
+	<pFluidCellsX>150</pFluidCellsX>
+	<pResizeFluid>0</pResizeFluid>
+	<pColorMult>98.5</pColorMult>
+	<pVelocityMult>7.5</pVelocityMult>
+	<pViscocity>0.00015</pViscocity>
+	<pColorDiffusion>0.000123</pColorDiffusion>
+	<pFadeSpeed>0.002</pFadeSpeed>
+	<pSolverIterations>15</pSolverIterations>
+	<pDeltaT>O.5</pDeltaT>
+	<pDrawMode>3</pDrawMode>
+	<pDoRGB>1</pDoRGB>
+	<pDoVorticityConfinement>0</pDoVorticityConfinement>
+	<pDrawFluid>1</pDrawFluid>
+	<pDrawParticles>0</pDrawParticles>
+	<pWrap_x>0</pWrap_x>
+	<pWrap_y>0</pWrap_y>
+</fluid>

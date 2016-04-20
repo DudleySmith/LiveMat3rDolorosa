@@ -13,7 +13,7 @@ void matrDolorosaNodeField::setup() {
     
     field.setName("field");
     
-    field.add(nbNodes.set("nbNodes", 100, 0, nodeAmountMax));
+    field.add(nbNodes.set("nbNodes", 5, 0, nodeAmountMax));
     field.add(xyLinks.set("xyLinks",false));
     field.add(circleSize.set("circleSize", 2, 0, 10));
     field.add(distance.set("distance", 150, 0, 1000));
@@ -132,3 +132,12 @@ void matrDolorosaNodeField::evalDist() {
     }
     
 }
+
+// -----------------------------------------
+vector<matrDolorosaNode> matrDolorosaNodeField::getNodes(){
+    return nodeArray;
+};
+// -----------------------------------------
+int matrDolorosaNodeField::getNbNodes(){
+    return nbNodes;
+};

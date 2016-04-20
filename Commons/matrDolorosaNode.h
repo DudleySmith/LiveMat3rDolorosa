@@ -13,11 +13,19 @@
 
 class matrDolorosaNode : public ofNode {
     
+    
     ofVec3f speed;
     float circleSize;
     float entropy;
     
 public:
+    matrDolorosaNode(){
+        
+    };
+    
+    
+    ofVec3f getVecSpeed(){return speed;};
+    
     matrDolorosaNode(float size) {
         circleSize = size;
     }

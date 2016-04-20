@@ -21,7 +21,9 @@ class matrDolorosaNodeField {
     
 public:
     ofxPanel panel;
-
+    vector<matrDolorosaNode> getNodes();
+    int getNbNodes();
+    
 private:
     ofxOscParameterSync sync;
     ofParameterGroup field;

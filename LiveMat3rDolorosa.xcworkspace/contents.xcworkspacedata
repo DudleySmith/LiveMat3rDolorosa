@@ -50,4 +50,7 @@
    <FileRef
       location = "group:LiveMat3rDolorosa_ProtoNoiseSphere/LiveMat3rDolorosa_ProtoNoiseSphere.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:LiveMat3rDolorosa_FluidNodes_Example/LiveMat3rDolorosa_FluidNodes_Example.xcodeproj">
+   </FileRef>
 </Workspace>
