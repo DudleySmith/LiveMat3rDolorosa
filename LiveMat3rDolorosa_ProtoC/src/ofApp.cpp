@@ -33,6 +33,9 @@ void ofApp::setup(){
     field.setup();
     
     // ------------------------------------
+    fluid.setup();
+    
+    // ------------------------------------
     syphonServer.setName("matrDolorosaGenerative");
     
     // ------------------------------------
@@ -43,15 +46,16 @@ void ofApp::setup(){
     
     panel.setup(main);
     panel.loadFromFile("main.xml");
-    
-    panel.setPosition(10, 10);
-    meshes.panel.setPosition(10, 90);
-    shapes.panel.setPosition(210, 10);
-    pointCloud.panelAnims.setPosition(420, 10);
-    pointCloud.panelDraws.setPosition(420, 290);
-    cam.panel.setPosition(630, 10);
-    postFx.panel.setPosition(630, 220);
-    field.panel.setPosition(850, 10);
+
+    panel.setPosition(getPanelX(), 10);
+    meshes.panel.setPosition(getPanelX(), 90); idxPanel++;
+    shapes.panel.setPosition(getPanelX(), 10); idxPanel++;
+    pointCloud.panelAnims.setPosition(getPanelX(), 10);
+    pointCloud.panelDraws.setPosition(getPanelX(), 290); idxPanel++;
+    cam.panel.setPosition(getPanelX(), 10);
+    postFx.panel.setPosition(getPanelX(), 220); idxPanel++;
+    field.panel.setPosition(getPanelX(), 10); idxPanel++;
+    fluid.panel.setPosition(getPanelX(), 10); idxPanel++;
     
 }
 
@@ -75,11 +79,25 @@ void ofApp::update(){
     field.update();
     
     // ------------------------------------
+    for(int i = 0; i < field.getNbNodes(); i++) {
+        matrDolorosaNode oneNode = field.getNodes()[i];
+        ofPoint pos = oneNode.getPosition() / ofGetWindowSize();
+        
+        pos.x = ofMap(pos.x, -1, 1, 0, 1);
+        pos.y = ofMap(pos.y, -1, 1, 0, 1);
+
+        fluid.addToFluid(pos, oneNode.getVecSpeed()/ ofGetWindowSize(), true, true);
+    }
+    fluid.update();
+    
+    // ------------------------------------
     cam.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    
+    ofBackground(ofColor::black);
     
     postFx.post.begin(cam);
     cam.begin();
@@ -126,6 +144,12 @@ void ofApp::draw(){
     // ------------------------------------
     //pies.draw();
     
+    // --------------------------------------------------------------------------
+    ofPushMatrix();
+    ofTranslate(-0.5*ofGetWidth(), -0.5*ofGetHeight());
+    fluid.draw();
+    ofPopMatrix();
+    
     // ------------------------------------
     field.draw();
     
@@ -148,6 +172,7 @@ void ofApp::draw(){
         cam.panel.draw();
         meshes.panel.draw();
         field.panel.draw();
+        fluid.panel.draw();
         
     }
     

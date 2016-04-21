@@ -161,7 +161,7 @@ void matrDolorosaFluid::update(){
 void matrDolorosaFluid::draw(){
 
     if(drawFluid) {
-        ofClear(0);
+        //ofClear(0);
         glColor3f(1, 1, 1);
         fluidDrawer.draw(0, 0, ofGetWidth(), ofGetHeight());
     } else {

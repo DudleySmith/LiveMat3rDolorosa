@@ -80,6 +80,37 @@
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 		EA8310011C99DEF5001E992C /* matrDolorosaPies.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA830FFF1C99DEF5001E992C /* matrDolorosaPies.cpp */; };
 		EA83B9BF1C8622440000AF1C /* ofxPie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA83B9BD1C8622440000AF1C /* ofxPie.cpp */; };
+		EA91E30A1CC8F14600556E78 /* matrDolorosaFluid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3081CC8F14600556E78 /* matrDolorosaFluid.cpp */; };
+		EA91E3FA1CC8F24600556E78 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3AC1CC8F24500556E78 /* README.md */; };
+		EA91E3FD1CC8F24600556E78 /* license.md in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3BE1CC8F24500556E78 /* license.md */; };
+		EA91E3FE1CC8F24600556E78 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3BF1CC8F24500556E78 /* README.md */; };
+		EA91E3FF1CC8F24600556E78 /* ofxSimpleGuiButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3C01CC8F24500556E78 /* ofxSimpleGuiButton.cpp */; };
+		EA91E4001CC8F24600556E78 /* ofxSimpleGuiColorPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3C21CC8F24500556E78 /* ofxSimpleGuiColorPicker.cpp */; };
+		EA91E4011CC8F24600556E78 /* ofxSimpleGuiComboBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3C41CC8F24500556E78 /* ofxSimpleGuiComboBox.cpp */; };
+		EA91E4021CC8F24600556E78 /* ofxSimpleGuiContent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3C61CC8F24500556E78 /* ofxSimpleGuiContent.cpp */; };
+		EA91E4031CC8F24600556E78 /* ofxSimpleGuiFPSCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3C81CC8F24500556E78 /* ofxSimpleGuiFPSCounter.cpp */; };
+		EA91E4041CC8F24600556E78 /* ofxSimpleGuiMovieSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3CA1CC8F24500556E78 /* ofxSimpleGuiMovieSlider.cpp */; };
+		EA91E4051CC8F24600556E78 /* ofxSimpleGuiQuadWarp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3CC1CC8F24500556E78 /* ofxSimpleGuiQuadWarp.cpp */; };
+		EA91E4061CC8F24600556E78 /* ofxSimpleGuiSlider2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3CE1CC8F24500556E78 /* ofxSimpleGuiSlider2d.cpp */; };
+		EA91E4071CC8F24600556E78 /* ofxSimpleGuiTitle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3D31CC8F24500556E78 /* ofxSimpleGuiTitle.cpp */; };
+		EA91E4081CC8F24600556E78 /* ofxSimpleGuiToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3D51CC8F24500556E78 /* ofxSimpleGuiToggle.cpp */; };
+		EA91E4091CC8F24600556E78 /* ofxSimpleGuiConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3D81CC8F24500556E78 /* ofxSimpleGuiConfig.cpp */; };
+		EA91E40A1CC8F24600556E78 /* ofxSimpleGuiControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3DA1CC8F24500556E78 /* ofxSimpleGuiControl.cpp */; };
+		EA91E40B1CC8F24600556E78 /* ofxSimpleGuiPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3DD1CC8F24500556E78 /* ofxSimpleGuiPage.cpp */; };
+		EA91E40C1CC8F24600556E78 /* ofxSimpleGuiToo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3DF1CC8F24500556E78 /* ofxSimpleGuiToo.cpp */; };
+		EA91E40D1CC8F24600556E78 /* ofxSimpleGuiValueControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3E11CC8F24500556E78 /* ofxSimpleGuiValueControl.cpp */; };
+		EA91E40E1CC8F24600556E78 /* MSACoreGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3E91CC8F24500556E78 /* MSACoreGL.cpp */; };
+		EA91E40F1CC8F24600556E78 /* MSAFluidDrawerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3EF1CC8F24500556E78 /* MSAFluidDrawerBase.cpp */; };
+		EA91E4101CC8F24600556E78 /* MSAFluidSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E3F41CC8F24500556E78 /* MSAFluidSolver.cpp */; };
+		EA91E4201CC8F29E00556E78 /* license.md in Sources */ = {isa = PBXBuildFile; fileRef = EA91E4191CC8F29E00556E78 /* license.md */; };
+		EA91E4211CC8F29E00556E78 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EA91E41A1CC8F29E00556E78 /* README.md */; };
+		EA91E4221CC8F29E00556E78 /* ofxMSAInteractiveObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E41C1CC8F29E00556E78 /* ofxMSAInteractiveObject.cpp */; };
+		EA91E42C1CC8F2C100556E78 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E4251CC8F2C100556E78 /* tinyxml.cpp */; };
+		EA91E42D1CC8F2C100556E78 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E4271CC8F2C100556E78 /* tinyxmlerror.cpp */; };
+		EA91E42E1CC8F2C100556E78 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E4281CC8F2C100556E78 /* tinyxmlparser.cpp */; };
+		EA91E42F1CC8F2C100556E78 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E42A1CC8F2C100556E78 /* ofxXmlSettings.cpp */; };
+		EA91E4341CC8F31100556E78 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E4301CC8F31100556E78 /* Particle.cpp */; };
+		EA91E4351CC8F31100556E78 /* ParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA91E4321CC8F31100556E78 /* ParticleSystem.cpp */; };
 		EA9C7AED1C96E7E000D55779 /* matrDolorosaNodeField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9C7AEB1C96E7E000D55779 /* matrDolorosaNodeField.cpp */; };
 		F285EB3169F1566CA3D93C20 /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E112B3AEBEA2C091BF2B40AE /* ofxPanel.cpp */; };
 /* End PBXBuildFile section */
@@ -291,6 +322,84 @@
 		EA83B9BD1C8622440000AF1C /* ofxPie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPie.cpp; sourceTree = "<group>"; };
 		EA83B9BE1C8622440000AF1C /* ofxPie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPie.h; sourceTree = "<group>"; };
 		EA83DF139B3F2085C1A56C49 /* ofxAssimpAnimation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAssimpAnimation.h; path = ../../../addons/ofxAssimpModelLoader/src/ofxAssimpAnimation.h; sourceTree = SOURCE_ROOT; };
+		EA91E3081CC8F14600556E78 /* matrDolorosaFluid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = matrDolorosaFluid.cpp; path = ../../Commons/matrDolorosaFluid.cpp; sourceTree = "<group>"; };
+		EA91E3091CC8F14600556E78 /* matrDolorosaFluid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrDolorosaFluid.h; path = ../../Commons/matrDolorosaFluid.h; sourceTree = "<group>"; };
+		EA91E39E1CC8F24500556E78 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EA91E3AB1CC8F24500556E78 /* Icon */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Icon; sourceTree = "<group>"; };
+		EA91E3AC1CC8F24500556E78 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EA91E3AD1CC8F24500556E78 /* ofxTuio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTuio.h; sourceTree = "<group>"; };
+		EA91E3AE1CC8F24500556E78 /* ofxTuioClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTuioClient.h; sourceTree = "<group>"; };
+		EA91E3AF1CC8F24500556E78 /* ofxTuioContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTuioContainer.h; sourceTree = "<group>"; };
+		EA91E3B01CC8F24500556E78 /* ofxTuioCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTuioCursor.h; sourceTree = "<group>"; };
+		EA91E3B11CC8F24500556E78 /* ofxTuioObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTuioObject.h; sourceTree = "<group>"; };
+		EA91E3B21CC8F24500556E78 /* ofxTuioPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTuioPoint.h; sourceTree = "<group>"; };
+		EA91E3B51CC8F24500556E78 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EA91E3BE1CC8F24500556E78 /* license.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = license.md; sourceTree = "<group>"; };
+		EA91E3BF1CC8F24500556E78 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EA91E3C01CC8F24500556E78 /* ofxSimpleGuiButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleGuiButton.cpp; sourceTree = "<group>"; };
+		EA91E3C11CC8F24500556E78 /* ofxSimpleGuiButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiButton.h; sourceTree = "<group>"; };
+		EA91E3C21CC8F24500556E78 /* ofxSimpleGuiColorPicker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleGuiColorPicker.cpp; sourceTree = "<group>"; };
+		EA91E3C31CC8F24500556E78 /* ofxSimpleGuiColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiColorPicker.h; sourceTree = "<group>"; };
+		EA91E3C41CC8F24500556E78 /* ofxSimpleGuiComboBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleGuiComboBox.cpp; sourceTree = "<group>"; };
+		EA91E3C51CC8F24500556E78 /* ofxSimpleGuiComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiComboBox.h; sourceTree = "<group>"; };
+		EA91E3C61CC8F24500556E78 /* ofxSimpleGuiContent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleGuiContent.cpp; sourceTree = "<group>"; };
+		EA91E3C71CC8F24500556E78 /* ofxSimpleGuiContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiContent.h; sourceTree = "<group>"; };
+		EA91E3C81CC8F24500556E78 /* ofxSimpleGuiFPSCounter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleGuiFPSCounter.cpp; sourceTree = "<group>"; };
+		EA91E3C91CC8F24500556E78 /* ofxSimpleGuiFPSCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiFPSCounter.h; sourceTree = "<group>"; };
+		EA91E3CA1CC8F24500556E78 /* ofxSimpleGuiMovieSlider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleGuiMovieSlider.cpp; sourceTree = "<group>"; };
+		EA91E3CB1CC8F24500556E78 /* ofxSimpleGuiMovieSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiMovieSlider.h; sourceTree = "<group>"; };
+		EA91E3CC1CC8F24500556E78 /* ofxSimpleGuiQuadWarp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleGuiQuadWarp.cpp; sourceTree = "<group>"; };
+		EA91E3CD1CC8F24500556E78 /* ofxSimpleGuiQuadWarp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiQuadWarp.h; sourceTree = "<group>"; };
+		EA91E3CE1CC8F24500556E78 /* ofxSimpleGuiSlider2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleGuiSlider2d.cpp; sourceTree = "<group>"; };
+		EA91E3CF1CC8F24500556E78 /* ofxSimpleGuiSlider2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiSlider2d.h; sourceTree = "<group>"; };
+		EA91E3D01CC8F24500556E78 /* ofxSimpleGuiSliderBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiSliderBase.h; sourceTree = "<group>"; };
+		EA91E3D11CC8F24500556E78 /* ofxSimpleGuiSliderFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiSliderFloat.h; sourceTree = "<group>"; };
+		EA91E3D21CC8F24500556E78 /* ofxSimpleGuiSliderInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiSliderInt.h; sourceTree = "<group>"; };
+		EA91E3D31CC8F24500556E78 /* ofxSimpleGuiTitle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleGuiTitle.cpp; sourceTree = "<group>"; };
+		EA91E3D41CC8F24500556E78 /* ofxSimpleGuiTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiTitle.h; sourceTree = "<group>"; };
+		EA91E3D51CC8F24500556E78 /* ofxSimpleGuiToggle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleGuiToggle.cpp; sourceTree = "<group>"; };
+		EA91E3D61CC8F24500556E78 /* ofxSimpleGuiToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiToggle.h; sourceTree = "<group>"; };
+		EA91E3D81CC8F24500556E78 /* ofxSimpleGuiConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleGuiConfig.cpp; sourceTree = "<group>"; };
+		EA91E3D91CC8F24500556E78 /* ofxSimpleGuiConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiConfig.h; sourceTree = "<group>"; };
+		EA91E3DA1CC8F24500556E78 /* ofxSimpleGuiControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleGuiControl.cpp; sourceTree = "<group>"; };
+		EA91E3DB1CC8F24500556E78 /* ofxSimpleGuiControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiControl.h; sourceTree = "<group>"; };
+		EA91E3DC1CC8F24500556E78 /* ofxSimpleGuiIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiIncludes.h; sourceTree = "<group>"; };
+		EA91E3DD1CC8F24500556E78 /* ofxSimpleGuiPage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleGuiPage.cpp; sourceTree = "<group>"; };
+		EA91E3DE1CC8F24500556E78 /* ofxSimpleGuiPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiPage.h; sourceTree = "<group>"; };
+		EA91E3DF1CC8F24500556E78 /* ofxSimpleGuiToo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleGuiToo.cpp; sourceTree = "<group>"; };
+		EA91E3E01CC8F24500556E78 /* ofxSimpleGuiToo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiToo.h; sourceTree = "<group>"; };
+		EA91E3E11CC8F24500556E78 /* ofxSimpleGuiValueControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleGuiValueControl.cpp; sourceTree = "<group>"; };
+		EA91E3E21CC8F24500556E78 /* ofxSimpleGuiValueControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleGuiValueControl.h; sourceTree = "<group>"; };
+		EA91E3E51CC8F24500556E78 /* MSACore-Cinder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "MSACore-Cinder.h"; path = "../../../addons/ofxMSACore/src/MSACore-Cinder.h"; sourceTree = "<group>"; };
+		EA91E3E61CC8F24500556E78 /* MSACore-OF.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "MSACore-OF.h"; path = "../../../addons/ofxMSACore/src/MSACore-OF.h"; sourceTree = "<group>"; };
+		EA91E3E71CC8F24500556E78 /* MSACore.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MSACore.h; path = ../../../addons/ofxMSACore/src/MSACore.h; sourceTree = "<group>"; };
+		EA91E3E81CC8F24500556E78 /* MSACoreCommon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MSACoreCommon.h; path = ../../../addons/ofxMSACore/src/MSACoreCommon.h; sourceTree = "<group>"; };
+		EA91E3E91CC8F24500556E78 /* MSACoreGL.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MSACoreGL.cpp; path = ../../../addons/ofxMSACore/src/MSACoreGL.cpp; sourceTree = "<group>"; };
+		EA91E3EA1CC8F24500556E78 /* MSACoreGL.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MSACoreGL.h; path = ../../../addons/ofxMSACore/src/MSACoreGL.h; sourceTree = "<group>"; };
+		EA91E3EB1CC8F24500556E78 /* MSACoreMath.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MSACoreMath.h; path = ../../../addons/ofxMSACore/src/MSACoreMath.h; sourceTree = "<group>"; };
+		EA91E3EE1CC8F24500556E78 /* MSAFluid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MSAFluid.h; path = ../../../addons/ofxMSAFluid/src/MSAFluid.h; sourceTree = "<group>"; };
+		EA91E3EF1CC8F24500556E78 /* MSAFluidDrawerBase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MSAFluidDrawerBase.cpp; path = ../../../addons/ofxMSAFluid/src/MSAFluidDrawerBase.cpp; sourceTree = "<group>"; };
+		EA91E3F01CC8F24500556E78 /* MSAFluidDrawerBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MSAFluidDrawerBase.h; path = ../../../addons/ofxMSAFluid/src/MSAFluidDrawerBase.h; sourceTree = "<group>"; };
+		EA91E3F11CC8F24500556E78 /* MSAFluidDrawerGl-Cinder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "MSAFluidDrawerGl-Cinder.h"; path = "../../../addons/ofxMSAFluid/src/MSAFluidDrawerGl-Cinder.h"; sourceTree = "<group>"; };
+		EA91E3F21CC8F24500556E78 /* MSAFluidDrawerGl-OF.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "MSAFluidDrawerGl-OF.h"; path = "../../../addons/ofxMSAFluid/src/MSAFluidDrawerGl-OF.h"; sourceTree = "<group>"; };
+		EA91E3F31CC8F24500556E78 /* MSAFluidParticleUpdater.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MSAFluidParticleUpdater.h; path = ../../../addons/ofxMSAFluid/src/MSAFluidParticleUpdater.h; sourceTree = "<group>"; };
+		EA91E3F41CC8F24500556E78 /* MSAFluidSolver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MSAFluidSolver.cpp; path = ../../../addons/ofxMSAFluid/src/MSAFluidSolver.cpp; sourceTree = "<group>"; };
+		EA91E3F51CC8F24500556E78 /* MSAFluidSolver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MSAFluidSolver.h; path = ../../../addons/ofxMSAFluid/src/MSAFluidSolver.h; sourceTree = "<group>"; };
+		EA91E4121CC8F29E00556E78 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EA91E4191CC8F29E00556E78 /* license.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = license.md; sourceTree = "<group>"; };
+		EA91E41A1CC8F29E00556E78 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EA91E41C1CC8F29E00556E78 /* ofxMSAInteractiveObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMSAInteractiveObject.cpp; sourceTree = "<group>"; };
+		EA91E41D1CC8F29E00556E78 /* ofxMSAInteractiveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMSAInteractiveObject.h; sourceTree = "<group>"; };
+		EA91E4251CC8F2C100556E78 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
+		EA91E4261CC8F2C100556E78 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
+		EA91E4271CC8F2C100556E78 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
+		EA91E4281CC8F2C100556E78 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
+		EA91E42A1CC8F2C100556E78 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
+		EA91E42B1CC8F2C100556E78 /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
+		EA91E4301CC8F31100556E78 /* Particle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Particle.cpp; path = ../../LiveMat3rDolorosa_FluidExample/src/Particle.cpp; sourceTree = "<group>"; };
+		EA91E4311CC8F31100556E78 /* Particle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Particle.h; path = ../../LiveMat3rDolorosa_FluidExample/src/Particle.h; sourceTree = "<group>"; };
+		EA91E4321CC8F31100556E78 /* ParticleSystem.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ParticleSystem.cpp; path = ../../LiveMat3rDolorosa_FluidExample/src/ParticleSystem.cpp; sourceTree = "<group>"; };
+		EA91E4331CC8F31100556E78 /* ParticleSystem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ParticleSystem.h; path = ../../LiveMat3rDolorosa_FluidExample/src/ParticleSystem.h; sourceTree = "<group>"; };
 		EA9C7AEA1C96E7E000D55779 /* matrDolorosaNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrDolorosaNode.h; path = ../../Commons/matrDolorosaNode.h; sourceTree = "<group>"; };
 		EA9C7AEB1C96E7E000D55779 /* matrDolorosaNodeField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = matrDolorosaNodeField.cpp; path = ../../Commons/matrDolorosaNodeField.cpp; sourceTree = "<group>"; };
 		EA9C7AEC1C96E7E000D55779 /* matrDolorosaNodeField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrDolorosaNodeField.h; path = ../../Commons/matrDolorosaNodeField.h; sourceTree = "<group>"; };
@@ -680,6 +789,12 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				EA91E4231CC8F2C100556E78 /* ofxXmlSettings */,
+				EA91E4111CC8F29E00556E78 /* ofxMSAInteractiveObject */,
+				EA91E3B41CC8F24500556E78 /* ofxTuio */,
+				EA91E3E41CC8F24500556E78 /* ofxSimpleGuiToo */,
+				EA91E3ED1CC8F24500556E78 /* ofxMSACore */,
+				EA91E3F71CC8F24500556E78 /* ofxMSAFluid */,
 				EA83B9BC1C8622440000AF1C /* ofxPie */,
 				8D83D7AC476703EBECC1932D /* ofxAnimatable */,
 				2C8F245ACBE61E28646C17F2 /* ofxAssimpModelLoader */,
@@ -778,22 +893,28 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				EA830FFF1C99DEF5001E992C /* matrDolorosaPies.cpp */,
-				EA8310001C99DEF5001E992C /* matrDolorosaPies.h */,
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				3D59296AA8D2A93B050B4775 /* matrDolorosaCam.cpp */,
+				BCFB88ED3F1950CD7FFE56FF /* matrDolorosaCam.h */,
+				EA91E3081CC8F14600556E78 /* matrDolorosaFluid.cpp */,
+				EA91E3091CC8F14600556E78 /* matrDolorosaFluid.h */,
+				FC870E70508B0B4DAACE29E2 /* matrDolorosaMeshes.cpp */,
+				FF3BE1DD9CA3D8FB87395E5A /* matrDolorosaMeshes.h */,
 				EA9C7AEA1C96E7E000D55779 /* matrDolorosaNode.h */,
 				EA9C7AEB1C96E7E000D55779 /* matrDolorosaNodeField.cpp */,
 				EA9C7AEC1C96E7E000D55779 /* matrDolorosaNodeField.h */,
-				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
-				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
-				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
-				3D59296AA8D2A93B050B4775 /* matrDolorosaCam.cpp */,
-				BCFB88ED3F1950CD7FFE56FF /* matrDolorosaCam.h */,
-				FC870E70508B0B4DAACE29E2 /* matrDolorosaMeshes.cpp */,
-				FF3BE1DD9CA3D8FB87395E5A /* matrDolorosaMeshes.h */,
+				EA830FFF1C99DEF5001E992C /* matrDolorosaPies.cpp */,
+				EA8310001C99DEF5001E992C /* matrDolorosaPies.h */,
 				A7CAE07F4EDBE1DBED572D50 /* matrDolorosaPostFX.cpp */,
 				5DFB23DD087C2DA4B45076F3 /* matrDolorosaPostFX.h */,
 				52031C77FCD4C3793BF2821B /* matrDolorosaShapes.cpp */,
 				4833D22A7F6D1E4260AFF047 /* matrDolorosaShapes.h */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				EA91E4301CC8F31100556E78 /* Particle.cpp */,
+				EA91E4311CC8F31100556E78 /* Particle.h */,
+				EA91E4321CC8F31100556E78 /* ParticleSystem.cpp */,
+				EA91E4331CC8F31100556E78 /* ParticleSystem.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -824,6 +945,190 @@
 			);
 			name = ofxPie;
 			path = ../../../addons/ofxPie;
+			sourceTree = "<group>";
+		};
+		EA91E3B31CC8F24500556E78 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EA91E3AD1CC8F24500556E78 /* ofxTuio.h */,
+				EA91E3AE1CC8F24500556E78 /* ofxTuioClient.h */,
+				EA91E3AF1CC8F24500556E78 /* ofxTuioContainer.h */,
+				EA91E3B01CC8F24500556E78 /* ofxTuioCursor.h */,
+				EA91E3B11CC8F24500556E78 /* ofxTuioObject.h */,
+				EA91E3B21CC8F24500556E78 /* ofxTuioPoint.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EA91E3B41CC8F24500556E78 /* ofxTuio */ = {
+			isa = PBXGroup;
+			children = (
+				EA91E39E1CC8F24500556E78 /* .gitignore */,
+				EA91E3AB1CC8F24500556E78 /* Icon */,
+				EA91E3AC1CC8F24500556E78 /* README.md */,
+				EA91E3B31CC8F24500556E78 /* src */,
+			);
+			name = ofxTuio;
+			path = /Volumes/Dude_Work/Code/_OF/0.9.0/apps/LiveMat3rDolorosa/LiveMat3rDolorosa_FluidExample/../../../addons/ofxTuio;
+			sourceTree = "<absolute>";
+		};
+		EA91E3D71CC8F24500556E78 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				EA91E3C01CC8F24500556E78 /* ofxSimpleGuiButton.cpp */,
+				EA91E3C11CC8F24500556E78 /* ofxSimpleGuiButton.h */,
+				EA91E3C21CC8F24500556E78 /* ofxSimpleGuiColorPicker.cpp */,
+				EA91E3C31CC8F24500556E78 /* ofxSimpleGuiColorPicker.h */,
+				EA91E3C41CC8F24500556E78 /* ofxSimpleGuiComboBox.cpp */,
+				EA91E3C51CC8F24500556E78 /* ofxSimpleGuiComboBox.h */,
+				EA91E3C61CC8F24500556E78 /* ofxSimpleGuiContent.cpp */,
+				EA91E3C71CC8F24500556E78 /* ofxSimpleGuiContent.h */,
+				EA91E3C81CC8F24500556E78 /* ofxSimpleGuiFPSCounter.cpp */,
+				EA91E3C91CC8F24500556E78 /* ofxSimpleGuiFPSCounter.h */,
+				EA91E3CA1CC8F24500556E78 /* ofxSimpleGuiMovieSlider.cpp */,
+				EA91E3CB1CC8F24500556E78 /* ofxSimpleGuiMovieSlider.h */,
+				EA91E3CC1CC8F24500556E78 /* ofxSimpleGuiQuadWarp.cpp */,
+				EA91E3CD1CC8F24500556E78 /* ofxSimpleGuiQuadWarp.h */,
+				EA91E3CE1CC8F24500556E78 /* ofxSimpleGuiSlider2d.cpp */,
+				EA91E3CF1CC8F24500556E78 /* ofxSimpleGuiSlider2d.h */,
+				EA91E3D01CC8F24500556E78 /* ofxSimpleGuiSliderBase.h */,
+				EA91E3D11CC8F24500556E78 /* ofxSimpleGuiSliderFloat.h */,
+				EA91E3D21CC8F24500556E78 /* ofxSimpleGuiSliderInt.h */,
+				EA91E3D31CC8F24500556E78 /* ofxSimpleGuiTitle.cpp */,
+				EA91E3D41CC8F24500556E78 /* ofxSimpleGuiTitle.h */,
+				EA91E3D51CC8F24500556E78 /* ofxSimpleGuiToggle.cpp */,
+				EA91E3D61CC8F24500556E78 /* ofxSimpleGuiToggle.h */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		EA91E3E31CC8F24500556E78 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EA91E3D71CC8F24500556E78 /* Controls */,
+				EA91E3D81CC8F24500556E78 /* ofxSimpleGuiConfig.cpp */,
+				EA91E3D91CC8F24500556E78 /* ofxSimpleGuiConfig.h */,
+				EA91E3DA1CC8F24500556E78 /* ofxSimpleGuiControl.cpp */,
+				EA91E3DB1CC8F24500556E78 /* ofxSimpleGuiControl.h */,
+				EA91E3DC1CC8F24500556E78 /* ofxSimpleGuiIncludes.h */,
+				EA91E3DD1CC8F24500556E78 /* ofxSimpleGuiPage.cpp */,
+				EA91E3DE1CC8F24500556E78 /* ofxSimpleGuiPage.h */,
+				EA91E3DF1CC8F24500556E78 /* ofxSimpleGuiToo.cpp */,
+				EA91E3E01CC8F24500556E78 /* ofxSimpleGuiToo.h */,
+				EA91E3E11CC8F24500556E78 /* ofxSimpleGuiValueControl.cpp */,
+				EA91E3E21CC8F24500556E78 /* ofxSimpleGuiValueControl.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EA91E3E41CC8F24500556E78 /* ofxSimpleGuiToo */ = {
+			isa = PBXGroup;
+			children = (
+				EA91E3B51CC8F24500556E78 /* .gitignore */,
+				EA91E3BE1CC8F24500556E78 /* license.md */,
+				EA91E3BF1CC8F24500556E78 /* README.md */,
+				EA91E3E31CC8F24500556E78 /* src */,
+			);
+			name = ofxSimpleGuiToo;
+			path = /Volumes/Dude_Work/Code/_OF/0.9.0/apps/LiveMat3rDolorosa/LiveMat3rDolorosa_FluidExample/../../../addons/ofxSimpleGuiToo;
+			sourceTree = "<absolute>";
+		};
+		EA91E3EC1CC8F24500556E78 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EA91E3E51CC8F24500556E78 /* MSACore-Cinder.h */,
+				EA91E3E61CC8F24500556E78 /* MSACore-OF.h */,
+				EA91E3E71CC8F24500556E78 /* MSACore.h */,
+				EA91E3E81CC8F24500556E78 /* MSACoreCommon.h */,
+				EA91E3E91CC8F24500556E78 /* MSACoreGL.cpp */,
+				EA91E3EA1CC8F24500556E78 /* MSACoreGL.h */,
+				EA91E3EB1CC8F24500556E78 /* MSACoreMath.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		EA91E3ED1CC8F24500556E78 /* ofxMSACore */ = {
+			isa = PBXGroup;
+			children = (
+				EA91E3EC1CC8F24500556E78 /* src */,
+			);
+			name = ofxMSACore;
+			path = ../LiveMat3rDolorosa_FluidExample;
+			sourceTree = "<group>";
+		};
+		EA91E3F61CC8F24500556E78 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EA91E3EE1CC8F24500556E78 /* MSAFluid.h */,
+				EA91E3EF1CC8F24500556E78 /* MSAFluidDrawerBase.cpp */,
+				EA91E3F01CC8F24500556E78 /* MSAFluidDrawerBase.h */,
+				EA91E3F11CC8F24500556E78 /* MSAFluidDrawerGl-Cinder.h */,
+				EA91E3F21CC8F24500556E78 /* MSAFluidDrawerGl-OF.h */,
+				EA91E3F31CC8F24500556E78 /* MSAFluidParticleUpdater.h */,
+				EA91E3F41CC8F24500556E78 /* MSAFluidSolver.cpp */,
+				EA91E3F51CC8F24500556E78 /* MSAFluidSolver.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		EA91E3F71CC8F24500556E78 /* ofxMSAFluid */ = {
+			isa = PBXGroup;
+			children = (
+				EA91E3F61CC8F24500556E78 /* src */,
+			);
+			name = ofxMSAFluid;
+			path = ../LiveMat3rDolorosa_FluidExample;
+			sourceTree = "<group>";
+		};
+		EA91E4111CC8F29E00556E78 /* ofxMSAInteractiveObject */ = {
+			isa = PBXGroup;
+			children = (
+				EA91E4121CC8F29E00556E78 /* .gitignore */,
+				EA91E4191CC8F29E00556E78 /* license.md */,
+				EA91E41A1CC8F29E00556E78 /* README.md */,
+				EA91E41B1CC8F29E00556E78 /* src */,
+			);
+			name = ofxMSAInteractiveObject;
+			path = ../../../addons/ofxMSAInteractiveObject;
+			sourceTree = "<group>";
+		};
+		EA91E41B1CC8F29E00556E78 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EA91E41C1CC8F29E00556E78 /* ofxMSAInteractiveObject.cpp */,
+				EA91E41D1CC8F29E00556E78 /* ofxMSAInteractiveObject.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EA91E4231CC8F2C100556E78 /* ofxXmlSettings */ = {
+			isa = PBXGroup;
+			children = (
+				EA91E4241CC8F2C100556E78 /* libs */,
+				EA91E4291CC8F2C100556E78 /* src */,
+			);
+			name = ofxXmlSettings;
+			path = ../../../addons/ofxXmlSettings;
+			sourceTree = "<group>";
+		};
+		EA91E4241CC8F2C100556E78 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				EA91E4251CC8F2C100556E78 /* tinyxml.cpp */,
+				EA91E4261CC8F2C100556E78 /* tinyxml.h */,
+				EA91E4271CC8F2C100556E78 /* tinyxmlerror.cpp */,
+				EA91E4281CC8F2C100556E78 /* tinyxmlparser.cpp */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		EA91E4291CC8F2C100556E78 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EA91E42A1CC8F2C100556E78 /* ofxXmlSettings.cpp */,
+				EA91E42B1CC8F2C100556E78 /* ofxXmlSettings.h */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		EEFDD7AE0009AE6F77EF2A93 /* include */ = {
@@ -947,27 +1252,40 @@
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				86160D93B39E2A1FD8E5EFB3 /* matrDolorosaCam.cpp in Sources */,
+				EA91E4041CC8F24600556E78 /* ofxSimpleGuiMovieSlider.cpp in Sources */,
 				31F9458520A0EC43C6263ADE /* matrDolorosaMeshes.cpp in Sources */,
 				0702A4A92504820B6D40BC6A /* matrDolorosaPostFX.cpp in Sources */,
 				EA8310011C99DEF5001E992C /* matrDolorosaPies.cpp in Sources */,
 				D6A249A58EAD820A83DB8477 /* matrDolorosaShapes.cpp in Sources */,
 				52C77060FBB9307AEFDAE8C6 /* ofxAnimatable.cpp in Sources */,
 				5D067CF087427621DD1E64B8 /* ofxAnimatableFloat.cpp in Sources */,
+				EA91E4051CC8F24600556E78 /* ofxSimpleGuiQuadWarp.cpp in Sources */,
 				EA83B9BF1C8622440000AF1C /* ofxPie.cpp in Sources */,
 				74D31933EE82E12834DB3B06 /* ofxAnimatableOfColor.cpp in Sources */,
+				EA91E4341CC8F31100556E78 /* Particle.cpp in Sources */,
 				BC054B7D3B48B395B1D87F2E /* ofxAnimatableOfPoint.cpp in Sources */,
 				3B8120368B4FCCD80883BAF3 /* ofxAssimpAnimation.cpp in Sources */,
 				483FA4F6D5FA6422C559B1F5 /* ofxAssimpMeshHelper.cpp in Sources */,
 				8DED5056525646FA71980866 /* ofxAssimpModelLoader.cpp in Sources */,
 				B8846EF8E504895A4A9EFEC0 /* ofxAssimpTexture.cpp in Sources */,
 				856AA354D08AB4B323081444 /* ofxBaseGui.cpp in Sources */,
+				EA91E4221CC8F29E00556E78 /* ofxMSAInteractiveObject.cpp in Sources */,
+				EA91E42F1CC8F2C100556E78 /* ofxXmlSettings.cpp in Sources */,
 				5CBB2AB3A60F65431D7B555D /* ofxButton.cpp in Sources */,
+				EA91E42D1CC8F2C100556E78 /* tinyxmlerror.cpp in Sources */,
+				EA91E4021CC8F24600556E78 /* ofxSimpleGuiContent.cpp in Sources */,
 				B266578FC55D23BFEBC042E7 /* ofxGuiGroup.cpp in Sources */,
 				483908258D00B98B4BE69F07 /* ofxLabel.cpp in Sources */,
 				F285EB3169F1566CA3D93C20 /* ofxPanel.cpp in Sources */,
+				EA91E4351CC8F31100556E78 /* ParticleSystem.cpp in Sources */,
+				EA91E3FE1CC8F24600556E78 /* README.md in Sources */,
 				837220E80EB56CD44AD27F2A /* ofxSlider.cpp in Sources */,
+				EA91E42E1CC8F2C100556E78 /* tinyxmlparser.cpp in Sources */,
+				EA91E4101CC8F24600556E78 /* MSAFluidSolver.cpp in Sources */,
+				EA91E40E1CC8F24600556E78 /* MSACoreGL.cpp in Sources */,
 				B56FE57CC35806596D38118C /* ofxSliderGroup.cpp in Sources */,
 				1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */,
+				EA91E4071CC8F24600556E78 /* ofxSimpleGuiTitle.cpp in Sources */,
 				72A929D3561B8232A182ABFC /* ofxOscBundle.cpp in Sources */,
 				5864AD82E20F15536D054EA3 /* ofxOscMessage.cpp in Sources */,
 				4ADB88E2FB52E76A471065DE /* ofxOscParameterSync.cpp in Sources */,
@@ -976,33 +1294,49 @@
 				8F5205AEF8861EF234F0651A /* ofxOscSender.cpp in Sources */,
 				ADE367465D2A8EBAD4C7A8D9 /* IpEndpointName.cpp in Sources */,
 				67FE4C7B15C2F0478C8126C2 /* NetworkingUtils.cpp in Sources */,
+				EA91E4201CC8F29E00556E78 /* license.md in Sources */,
 				510CAFE035E576A4E1502D52 /* UdpSocket.cpp in Sources */,
 				62545D179C94265CA1389D4A /* OscOutboundPacketStream.cpp in Sources */,
+				EA91E40B1CC8F24600556E78 /* ofxSimpleGuiPage.cpp in Sources */,
 				C4782ECC372420ACE0615B74 /* OscPrintReceivedElements.cpp in Sources */,
 				0546D1A38E13BD319CC9755B /* OscReceivedElements.cpp in Sources */,
+				EA91E40F1CC8F24600556E78 /* MSAFluidDrawerBase.cpp in Sources */,
+				EA91E4091CC8F24600556E78 /* ofxSimpleGuiConfig.cpp in Sources */,
 				879A251454401BC0B6E4F238 /* OscTypes.cpp in Sources */,
 				41E95B559F12B9A3DC97B1F5 /* ofxPointCloud.cpp in Sources */,
 				79308B05C4D0A9B9E404FFED /* BleachBypassPass.cpp in Sources */,
+				EA91E4061CC8F24600556E78 /* ofxSimpleGuiSlider2d.cpp in Sources */,
 				3A499904889C490DCF533C6E /* BloomPass.cpp in Sources */,
 				DFB75F1EBE744A456AC999F4 /* ContrastPass.cpp in Sources */,
+				EA91E3FD1CC8F24600556E78 /* license.md in Sources */,
 				778DCA6792476E5B9F57F175 /* ConvolutionPass.cpp in Sources */,
 				B58A80B21A55E254F48E6E13 /* DofAltPass.cpp in Sources */,
 				114C00B13F753E59BB0984BB /* DofPass.cpp in Sources */,
 				AE65C02FEC934514466A8D67 /* EdgePass.cpp in Sources */,
+				EA91E4031CC8F24600556E78 /* ofxSimpleGuiFPSCounter.cpp in Sources */,
+				EA91E4001CC8F24600556E78 /* ofxSimpleGuiColorPicker.cpp in Sources */,
 				33DB731E964056D7E35604A7 /* FakeSSSPass.cpp in Sources */,
 				04C13EEA813A786CC1D8137A /* FxaaPass.cpp in Sources */,
+				EA91E40A1CC8F24600556E78 /* ofxSimpleGuiControl.cpp in Sources */,
 				6A505EAE8088949A9180FFE7 /* GodRaysPass.cpp in Sources */,
+				EA91E40D1CC8F24600556E78 /* ofxSimpleGuiValueControl.cpp in Sources */,
+				EA91E4211CC8F29E00556E78 /* README.md in Sources */,
+				EA91E40C1CC8F24600556E78 /* ofxSimpleGuiToo.cpp in Sources */,
 				28AFD6FA9B9C885AFD9FF1C7 /* HorizontalTiltShifPass.cpp in Sources */,
 				B59194C82B8D802DA33EC465 /* HsbShiftPass.cpp in Sources */,
+				EA91E4081CC8F24600556E78 /* ofxSimpleGuiToggle.cpp in Sources */,
 				884CB4D049E35C51E949A565 /* KaleidoscopePass.cpp in Sources */,
 				7AB51F1099DC01486D18FAF6 /* LimbDarkeningPass.cpp in Sources */,
 				B1747F12881D899DCA2647FC /* LUTPass.cpp in Sources */,
 				8072A86E35F7000F7CDEEF42 /* NoiseWarpPass.cpp in Sources */,
+				EA91E30A1CC8F14600556E78 /* matrDolorosaFluid.cpp in Sources */,
 				B951AAE35209993B4E399E77 /* PixelatePass.cpp in Sources */,
 				BE5ED1FDB18D5092CF3AACA0 /* PostProcessing.cpp in Sources */,
 				1E615236D6D182DED6C8A8B2 /* RenderPass.cpp in Sources */,
 				E4797F1786BE22985F7EE55F /* RGBShiftPass.cpp in Sources */,
 				4A2B684DF41F7779B2947319 /* RimHighlightingPass.cpp in Sources */,
+				EA91E42C1CC8F2C100556E78 /* tinyxml.cpp in Sources */,
+				EA91E3FF1CC8F24600556E78 /* ofxSimpleGuiButton.cpp in Sources */,
 				4355FD81C3F9DDE40B10CE94 /* SSAOPass.cpp in Sources */,
 				813E52BD790CE4AAF527DCD4 /* ToonPass.cpp in Sources */,
 				898CB0955CB42FEB5D750A5C /* VerticalTiltShifPass.cpp in Sources */,
@@ -1011,6 +1345,8 @@
 				6A565A9714A6A12EB9098F52 /* src_colors.cpp in Sources */,
 				1D6B78EF041B097CE4F423C4 /* svgtiny.cpp in Sources */,
 				4294163B15857489B2176769 /* svgtiny_gradient.cpp in Sources */,
+				EA91E4011CC8F24600556E78 /* ofxSimpleGuiComboBox.cpp in Sources */,
+				EA91E3FA1CC8F24600556E78 /* README.md in Sources */,
 				1B5F996886A777589D5DD794 /* svgtiny_list.cpp in Sources */,
 				1F558B76FB3412843DDAA031 /* ofxSyphonClient.mm in Sources */,
 				8D60C222CBD3F869382832E9 /* ofxSyphonServer.mm in Sources */,

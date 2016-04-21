@@ -12,6 +12,7 @@
 #include "matrDolorosaMeshes.h"
 #include "matrDolorosaPies.h"
 #include "matrDolorosaNodeField.h"
+#include "matrDolorosaFluid.h"
 
 class ofApp : public ofBaseApp{
     
@@ -42,12 +43,21 @@ public:
     matrDolorosaMeshes      meshes;
     matrDolorosaPies        pies;
     matrDolorosaNodeField   field;
+    matrDolorosaFluid       fluid;
+
 
     ofxPanel          panel;
     ofParameterGroup  main;
     ofParameter<bool> redrawShapes;
     ofParameter<bool> drawMarks;
     ofParameter<bool> drawUI;
+    
+    int panelWidth = 210;
+    int idxPanel = 0;
+    int getPanelX(){
+        return 10 + panelWidth * idxPanel;
+    };
+
     
     // Syphon output
     ofxSyphonServer syphonServer;
