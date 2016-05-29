@@ -54,20 +54,21 @@ void matrDolorosaFluid::setup() {
     */
     pgMsaFluid.setName("fluid");
     
+    pgMsaFluid.add(pDrawFluid.set("pDrawFluid", true));
+    pgMsaFluid.add(pDrawParticles.set("pDrawParticles", true));
+    
     pgMsaFluid.add(pFluidCellsX.set("pFluidCellsX", 150, 20, 400));
     pgMsaFluid.add(pResizeFluid.set("pResizeFluid", false));
     pgMsaFluid.add(pColorMult.set("pColorMult", 98.5, 0, 100));
     pgMsaFluid.add(pVelocityMult.set("pVelocityMult", 7.5, 0, 100));
-    pgMsaFluid.add(pViscocity.set("pViscocity", 0.00015, 0.0, 0.01));
-    pgMsaFluid.add(pColorDiffusion.set("pColorDiffusion", 0.0, 0.0, 0.0003));
-    pgMsaFluid.add(pFadeSpeed.set("pFadeSpeed", 0.002, 0.0, 0.1));
+    pgMsaFluid.add(pViscocity.set("pViscocity", 0.00015, 0.0, 1.0));
+    pgMsaFluid.add(pColorDiffusion.set("pColorDiffusion", 0.0, 0.0, 1.0));
+    pgMsaFluid.add(pFadeSpeed.set("pFadeSpeed", 0.002, 0.0, 1.0));
     pgMsaFluid.add(pSolverIterations.set("pSolverIterations", 15, 1, 50));
     pgMsaFluid.add(pDeltaT.set("pDeltaT", 0.5, 0.1, 5));
     pgMsaFluid.add(pDrawMode.set("pDrawMode", 3, 0, 3));
     pgMsaFluid.add(pDoRGB.set("pDoRGB", true));
     pgMsaFluid.add(pDoVorticityConfinement.set("pDoVorticityConfinement", false));
-    pgMsaFluid.add(pDrawFluid.set("pDrawFluid", true));
-    pgMsaFluid.add(pDrawParticles.set("pDrawParticles", true));
     pgMsaFluid.add(pWrap_x.set("pWrap_x", false));
     pgMsaFluid.add(pWrap_y.set("pWrap_y", false));
     
@@ -132,11 +133,16 @@ void matrDolorosaFluid::update(){
     fluidCellsX = pFluidCellsX;
     colorMult = pColorMult;
     velocityMult = pVelocityMult;
-    fluidSolver.viscocity = pViscocity;
-    fluidSolver.colorDiffusion = pColorDiffusion;
-    fluidSolver.fadeSpeed = pFadeSpeed;
+    fluidSolver.viscocity = ofMap(pViscocity, 0.0, 1.0, 0.0, 0.01);
+    fluidSolver.colorDiffusion = ofMap(pColorDiffusion, 0.0, 1.0, 0.0, 0.0003);
+    fluidSolver.fadeSpeed = ofMap(pFadeSpeed, 0.0, 1.0, 0.0, 0.1);
     fluidSolver.solverIterations = pSolverIterations;
     fluidSolver.deltaT = pDeltaT;
+    
+//    pgMsaFluid.add(pViscocity.set("pViscocity", 0.00015, 0.0, 0.01));
+//    pgMsaFluid.add(pColorDiffusion.set("pColorDiffusion", 0.0, 0.0, 0.0003));
+//    pgMsaFluid.add(pFadeSpeed.set("pFadeSpeed", 0.002, 0.0, 0.1));
+    
     //fluidDrawer.drawMode = pDrawMode;
     fluidSolver.doRGB = pDoRGB;
     fluidSolver.doVorticityConfinement = pDoVorticityConfinement;

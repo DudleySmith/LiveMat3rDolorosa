@@ -28,6 +28,8 @@ void matrDolorosaCam::setup(){
     cam.add(polarPhi.set("polarPhi",0,0,360));
     cam.add(polarRadius.set("polarRadius",-1000,0,-2000));
     
+    cam.add(fov.set("fov",50, 0, 180));
+    
     panel.setup(cam);
 
     // by now needs to pass the gui parameter groups since the panel internally creates it's own group
@@ -44,6 +46,8 @@ void matrDolorosaCam::setup(){
     targetX.addListener(this, &matrDolorosaCam::targetXChanged);
     targetY.addListener(this, &matrDolorosaCam::targetYChanged);
     targetZ.addListener(this, &matrDolorosaCam::targetZChanged);
+    
+    fov.addListener(this, &matrDolorosaCam::fovChanged);
     
     sendAKey.addListener(this,&matrDolorosaCam::sendAKeyPressed);
     
@@ -82,19 +86,19 @@ ofVec3f matrDolorosaCam::polarPos(){
 
 // -------------------------------------------
 void matrDolorosaCam::xChanged(float & xChange){
-    if(!sendAKey){
+    if(!sendAKey && !camRecording){
         setGlobalPosition(camX, camY, camZ);
         setTarget(ofVec3f(targetX, targetY, targetZ));
     }
 }
 void matrDolorosaCam::yChanged(float & yChange){
-    if(!sendAKey){
+    if(!sendAKey && !camRecording){
         setGlobalPosition(camX, camY, camZ);
         setTarget(ofVec3f(targetX, targetY, targetZ));
     }
 }
 void matrDolorosaCam::zChanged(float & zChange){
-    if(!sendAKey){
+    if(!sendAKey && !camRecording){
         setGlobalPosition(camX, camY, camZ);
         setTarget(ofVec3f(targetX, targetY, targetZ));
     }
@@ -102,17 +106,17 @@ void matrDolorosaCam::zChanged(float & zChange){
 
 // -------------------------------------------
 void matrDolorosaCam::targetXChanged(float & targetXChange){
-    if(!sendAKey){
+    if(!sendAKey && !camRecording){
         setTarget(ofVec3f(targetX, targetY, targetZ));
     }
 }
 void matrDolorosaCam::targetYChanged(float & targetYChange){
-    if(!sendAKey){
+    if(!sendAKey && !camRecording){
         setTarget(ofVec3f(targetX, targetY, targetZ));
     }
 }
 void matrDolorosaCam::targetZChanged(float & targetZChange){
-    if(!sendAKey){
+    if(!sendAKey && !camRecording){
         setTarget(ofVec3f(targetX, targetY, targetZ));
     }
 }
@@ -133,22 +137,34 @@ void matrDolorosaCam::polarRadiusChanged(float & polarRadiusChange){
 }
 
 // -------------------------------------------
+void matrDolorosaCam::fovChanged(float & fovChange){
+    setFov(fovChange);
+}
+
+// -------------------------------------------
 void matrDolorosaCam::sendAKeyPressed(bool & sendAKeyPress){
-    
+
     if(sendAKey == true){
-        
-        camX = getGlobalPosition().x;
-        camY = getGlobalPosition().y;
-        camZ = getGlobalPosition().z;
-        
-        targetX = getTarget().getGlobalPosition().x;
-        targetY = getTarget().getGlobalPosition().y;
-        targetZ = getTarget().getGlobalPosition().z;
-        
+        recordCam();
         sendAKey = false;
-        
         sync.update();
-        
     }
+}
+
+// -------------------------------------------------
+void matrDolorosaCam::recordCam(){
+    
+    camRecording = true;
+    
+    camX = getGlobalPosition().x;
+    camY = getGlobalPosition().y;
+    camZ = getGlobalPosition().z;
+    
+    targetX = getTarget().getGlobalPosition().x;
+    targetY = getTarget().getGlobalPosition().y;
+    targetZ = getTarget().getGlobalPosition().z;
+    
+    camRecording = false;
+    
 }
 

@@ -13,6 +13,8 @@ void matrDolorosaNodeField::setup() {
     
     field.setName("field");
     
+    field.add(drawField.set("drawField",false));
+    
     field.add(nbNodes.set("nbNodes", 5, 0, nodeAmountMax));
     field.add(xyLinks.set("xyLinks",false));
     field.add(circleSize.set("circleSize", 2, 0, 10));
@@ -46,6 +48,9 @@ void matrDolorosaNodeField::update() {
     
     sync.update();
     
+    // Stop all operations --------
+    if(!drawField)  return;
+    
     evalDist();
     
     for(int i = 0; i < nbNodes; i++) {
@@ -69,6 +74,8 @@ void matrDolorosaNodeField::update() {
 void matrDolorosaNodeField::draw() {
     
     //evalDist();
+    // Stop all operations --------
+    if(!drawField)  return;
     
     for(int i = 0; i < nbNodes; i++) {
         

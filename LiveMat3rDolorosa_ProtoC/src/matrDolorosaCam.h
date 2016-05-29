@@ -30,7 +30,10 @@ public:
     void polarThetaChanged(float & polarThetaChange);
     void polarRadiusChanged(float & polarRadiusChange);
     
+    void fovChanged(float & fovChange);
+    
     void sendAKeyPressed(bool & sendAKeyPress);
+    void recordCam();
     
     ofVec3f polarPos();
     
@@ -52,6 +55,8 @@ public:
     ofParameter<float>  targetY;
     ofParameter<float>  targetZ;
     
-    bool camDriveValues;
+    ofParameter<float>  fov;
+    
+    bool camRecording;
 
 };

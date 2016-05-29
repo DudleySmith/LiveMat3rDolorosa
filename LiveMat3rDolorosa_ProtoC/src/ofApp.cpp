@@ -79,17 +79,18 @@ void ofApp::update(){
     field.update();
     
     // ------------------------------------
-    for(int i = 0; i < field.getNbNodes(); i++) {
-        matrDolorosaNode oneNode = field.getNodes()[i];
-        ofPoint pos = oneNode.getPosition() / ofGetWindowSize();
-        
-        pos.x = ofMap(pos.x, -1, 1, 0, 1);
-        pos.y = ofMap(pos.y, -1, 1, 0, 1);
+    if(field.drawField){
+        for(int i = 0; i < field.getNbNodes(); i++) {
+            matrDolorosaNode oneNode = field.getNodes()[i];
+            ofPoint pos = oneNode.getPosition() / ofGetWindowSize();
+            
+            pos.x = ofMap(pos.x, -1, 1, 0, 1);
+            pos.y = ofMap(pos.y, -1, 1, 0, 1);
 
-        fluid.addToFluid(pos, oneNode.getVecSpeed()/ ofGetWindowSize(), true, true);
+            fluid.addToFluid(pos, oneNode.getVecSpeed()/ ofGetWindowSize(), true, true);
+        }
     }
     fluid.update();
-    
     // ------------------------------------
     cam.update();
 }
@@ -197,11 +198,18 @@ void ofApp::keyPressed(int key){
         grab.save(ofGetTimestampString()+".jpg");
     }
     
+//    // Take a picture ------------------------------------------
+//    if(key == 'k'){
+//        cam.recordCam();
+//    }
 }
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
-    
+    // Take a picture ------------------------------------------
+    if(key == 'k'){
+        cam.recordCam();
+    }
 }
 
 //--------------------------------------------------------------

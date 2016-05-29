@@ -24,6 +24,8 @@ public:
     vector<matrDolorosaNode> getNodes();
     int getNbNodes();
     
+    ofParameter<bool>   drawField;
+    
 private:
     ofxOscParameterSync sync;
     ofParameterGroup field;

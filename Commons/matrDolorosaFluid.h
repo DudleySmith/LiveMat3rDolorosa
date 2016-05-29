@@ -51,8 +51,11 @@ private:
     ofxOscParameterSync sync;
     ofParameterGroup pgMsaFluid;
     
+    ofParameter<bool> pDrawFluid;
+    ofParameter<bool> pDrawParticles;
+    
     ofParameter<float> pFluidCellsX;
-    ofParameter<bool> pResizeFluid;
+    ofParameter<bool>   pResizeFluid;
     ofParameter<float> pColorMult;
     ofParameter<float> pVelocityMult;
     ofParameter<float> pViscocity;
@@ -63,8 +66,6 @@ private:
     ofParameter<int> pDrawMode;
     ofParameter<bool> pDoRGB;
     ofParameter<bool> pDoVorticityConfinement;
-    ofParameter<bool> pDrawFluid;
-    ofParameter<bool> pDrawParticles;
     ofParameter<bool> pWrap_x;
     ofParameter<bool> pWrap_y;
     

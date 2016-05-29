@@ -56,11 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Commons/matrDolorosaFluid.cpp"
-            timestampString = "482932772.884244"
+            timestampString = "484414459.470502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
             landmarkName = "matrDolorosaFluid::drawModeChanged(int &amp; _pDrawMode)"
             landmarkType = "5">
          </BreakpointContent>
@@ -72,12 +72,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Commons/matrDolorosaFluid.cpp"
-            timestampString = "482932821.091696"
+            timestampString = "484414459.470502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
+            startingLineNumber = "235"
+            endingLineNumber = "235"
             landmarkName = "matrDolorosaFluid::resizeFluidPressed(bool &amp; _pResizeFluid)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../addons/ofxOsc/src/ofxOscParameterSync.cpp"
+            timestampString = "485641043.130211"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "ofxOscParameterSync::parameterChanged( ofAbstractParameter &amp; parameter )"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../addons/ofxOsc/src/ofxOscSender.cpp"
+            timestampString = "485641283.324025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "ofxOscSender::sendParameter( const ofAbstractParameter &amp; parameter)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
