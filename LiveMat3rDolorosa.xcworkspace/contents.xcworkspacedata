@@ -5,10 +5,22 @@
       location = "container:"
       name = "example">
       <FileRef
-         location = "group:../../addons/ofxMSAFluid/ofxMSAFluidExample/ofxMSAFluidExample.xcodeproj">
+         location = "group:../../examples/addons/svgExample/svgExample.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:../../examples/gui/parameterGroupExample/parameterGroupExample.xcodeproj">
+         location = "group:../../addons/ofxAnimatable/example/example_animatable.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../addons/ofxPostProcessing/Example_OF9/Example_OF9.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../addons/ofxSyphon/example-Basic/example-Basic.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/graphics/fontsExample/fontsExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/graphics/fontShapesExample/fontShapesExample.xcodeproj">
       </FileRef>
       <FileRef
          location = "group:../../examples/gui/guiExample/guiExample.xcodeproj">
@@ -17,16 +29,16 @@
          location = "group:../../examples/gui/guiFromParametersExample/guiFromParametersExample.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:../../examples/addons/oscReceiveExample/oscReceiveExample.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../../addons/ofxSyphon/example-Basic/example-Basic.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../../addons/ofxPostProcessing/Example_OF9/Example_OF9.xcodeproj">
+         location = "group:../../addons/ofxMSAFluid/ofxMSAFluidExample/ofxMSAFluidExample.xcodeproj">
       </FileRef>
       <FileRef
          location = "group:../../examples/addons/oscReceiveExample/oscReceiveExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/addons/oscReceiveExample/oscReceiveExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/gui/parameterGroupExample/parameterGroupExample.xcodeproj">
       </FileRef>
    </Group>
    <FileRef
@@ -52,5 +64,14 @@
    </FileRef>
    <FileRef
       location = "group:LiveMat3rDolorosa_FluidNodes_Example/LiveMat3rDolorosa_FluidNodes_Example.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LiveMat3rDolorosa_FlowExample/LiveMat3rDolorosa_FlowExample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LiveMat3rDolorosa_FontExample/LiveMat3rDolorosa_FontExample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LiveMat3rDolorosa_TextExample/LiveMat3rDolorosa_TextExample.xcodeproj">
    </FileRef>
 </Workspace>

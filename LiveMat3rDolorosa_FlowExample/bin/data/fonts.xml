@@ -1,0 +1,14 @@
+<fonts>
+		<A_Name>BLURL___.ttf</A_Name>
+		<A_Size>92</A_Size>
+		<B_Name>baka-too.ttf</B_Name>
+		<B_Size>97</B_Size>
+		<word>wandering</word>
+		<blend>1</blend>
+		<space>0.665</space>
+		<scale>0.81</scale>
+		<ratio>1</ratio>
+		<width>0.21</width>
+		<nbPoints>500</nbPoints>
+		<lineWidth>5</lineWidth>
+</fonts>

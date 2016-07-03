@@ -30,8 +30,8 @@ void matrDolorosaNodeField::setup() {
     field.add(exRadius.set("exRadius",200, 0, 1000));
     field.add(inRadius.set("inRadius",0, 0, 1000));
     
-    field.add(sphereColor.set("faceColor",ofColor(255),ofColor(0,0),ofColor(255)));
-    field.add(linkColor.set("wireColor",ofColor(255),ofColor(0,0),ofColor(255)));
+    field.add(sphereColor.set("sphereColor",ofColor(255,255),ofColor(0,0),ofColor(255,255)));
+    field.add(linkColor.set("linkColor",ofColor(255,255),ofColor(0,0),ofColor(255,255)));
 
     panel.setup(field);
     panel.loadFromFile("field.xml");
@@ -73,9 +73,13 @@ void matrDolorosaNodeField::update() {
 // -----------------------------------------
 void matrDolorosaNodeField::draw() {
     
+    
     //evalDist();
     // Stop all operations --------
-    if(!drawField)  return;
+    if(!drawField)        return;
+    
+    ofPushStyle();
+    ofEnableAlphaBlending();
     
     for(int i = 0; i < nbNodes; i++) {
         
@@ -90,15 +94,18 @@ void matrDolorosaNodeField::draw() {
                 
                 int transp = (int)(255-(255*distances[i][j]/ distance));
                 
-                transp = ofMap(distances[i][j], 0, distance, 255, 0);
+                //transp = ofMap(distances[i][j], 0, distance, 255, 0);
+                //ofSetColor(linkColor, transp);
                 
-                ofSetColor(linkColor, transp);
+                ofSetColor(linkColor);
                 ofDrawLine(temp.getPosition(), nodeArray[j].getPosition());
                 
             }
         }
         
     }
+    
+    ofPopStyle();
     
 }
 
