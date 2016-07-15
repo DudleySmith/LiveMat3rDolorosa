@@ -9,6 +9,7 @@
 #include "ofMain.h"
 #include "ofxGui.h"
 #include "ofxOscParameterSync.h"
+#include "ofxAssimpModelLoader.h"
 
 #include "matrDolorosaNode.h"
 
@@ -19,13 +20,21 @@ class matrDolorosaNodeField {
     vector<matrDolorosaNode> nodeArray;
     float distances[nodeAmountMax][nodeAmountMax];
     
+    ofTrueTypeFont oFont;
+    
 public:
     ofxPanel panel;
     vector<matrDolorosaNode> getNodes();
     int getNbNodes();
     
-    ofParameter<bool>   drawField;
+    ofPolyline          textPoints;
     
+    ofxAssimpModelLoader    meshLoader;
+    ofMesh                  mesh;
+    ofPolyline              meshPoints;
+    
+    ofParameter<bool>   drawField;
+
 private:
     ofxOscParameterSync sync;
     ofParameterGroup field;
@@ -47,10 +56,35 @@ private:
     ofParameter<ofColor>    sphereColor;
     ofParameter<ofColor>    linkColor;
     
+    ofParameter<bool>   textReset;
+    ofParameter<float>  choiceRatio;
+    ofParameter<float>  choiceEntropy;
     
+    ofParameter<float>  natureRatio;
+    ofParameter<float>  natureEntropy;
     
+    ofParameter<float>  textForceRatio;
+    ofParameter<float>  textEntropy;
+    
+    ofParameter<float>  meshForceRatio;
+    ofParameter<float>  meshEntropy;
+    
+    //ofParameter<float>  textEntropyBig;
+    //ofParameter<float>  textEntropyFine;
+    
+    ofParameter<bool>   startText;
+    ofParameter<string> textWord;
+    ofParameter<int>    textSize;
+    ofParameter<string> textFont;
+    
+    void startPointRecalled(bool &_recall);
+    void wordChanged(string &_wordChange);
+        
 public:
     void setup();
+    void setupFont();
+    void setupMesh(string _meshFile);
+    
     void update();
     void draw();
     void generateNodes(int _nodeAmount);

@@ -53,7 +53,7 @@ void ofApp::setup(){
     pointCloud.panelAnims.setPosition(getPanelX(), 10);
     pointCloud.panelDraws.setPosition(getPanelX(), 290); idxPanel++;
     cam.panel.setPosition(getPanelX(), 10);
-    postFx.panel.setPosition(getPanelX(), 220); idxPanel++;
+    postFx.panel.setPosition(getPanelX(), 250); idxPanel++;
     field.panel.setPosition(getPanelX(), 10); idxPanel++;
     fluid.panel.setPosition(getPanelX(), 10); idxPanel++;
     

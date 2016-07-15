@@ -43,7 +43,7 @@
 			<sigma>0.05</sigma>
 			<weight>0.05</weight>
 			<ambient_temperature>0</ambient_temperature>
-			<gravity>0.01, 0</gravity>
+			<gravity>0.0, 0.0</gravity>
 		</smoke_buoyancy>
 		<maximum>
 			<clampForce>0.05</clampForce>

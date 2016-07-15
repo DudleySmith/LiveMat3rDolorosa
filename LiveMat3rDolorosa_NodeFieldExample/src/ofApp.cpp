@@ -3,6 +3,8 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofBackground(0);
+    
+    field.panel.ofxBaseGui::setPosition(10, 50);
     field.setup();
     //smooth(8);
 }
@@ -29,6 +31,8 @@ void ofApp::draw(){
     cam.end();
     
     field.panel.draw();
+    
+    ofDrawBitmapString(ofToString(ofGetFrameRate()), 10, 10);
     
 }
 

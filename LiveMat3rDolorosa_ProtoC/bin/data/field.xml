@@ -13,4 +13,16 @@
 	<inRadius>0</inRadius>
 	<faceColor>255, 255, 255, 255</faceColor>
 	<wireColor>255, 255, 255, 255</wireColor>
+	<drawField>0</drawField>
+	<sphereColor>255, 255, 255, 255</sphereColor>
+	<linkColor>255, 255, 255, 255</linkColor>
+	<startPointRecall>0</startPointRecall>
+	<backEntropyBig>10</backEntropyBig>
+	<backEntropyFine>0.1</backEntropyFine>
+	<startRandom>0</startRandom>
+	<startRadius>400</startRadius>
+	<startText>1</startText>
+	<textWord>wandering</textWord>
+	<textSize>120</textSize>
+	<textFont>verdana.ttf</textFont>
 </field>

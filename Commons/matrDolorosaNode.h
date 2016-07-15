@@ -15,8 +15,14 @@ class matrDolorosaNode : public ofNode {
     
     
     ofVec3f speed;
-    float circleSize;
-    float entropy;
+    float   circleSize;
+    float   entropy;
+    
+    float   textEntropy;
+    ofPoint textPoint;
+    
+    float   meshEntropy;
+    ofPoint meshPoint;
     
 public:
     matrDolorosaNode(){
@@ -26,14 +32,54 @@ public:
     
     ofVec3f getVecSpeed(){return speed;};
     
+    ofPoint getTextPoint(){return textPoint;};
+    void setTextPoint(ofPoint _textPoint){textPoint = _textPoint;};
+    
+    ofPoint getMeshPoint(){return meshPoint;};
+    void setMeshPoint(ofPoint _meshPoint){meshPoint = _meshPoint;};
+    
     matrDolorosaNode(float size) {
         circleSize = size;
     }
     
     // ----------------------------------------------------------------------------------------------
+    void update(float _natureForceRatio, float _textForceRatio, float _meshForceRatio) {
+        // Classical update
+        update();
+        setPosition(_meshForceRatio*meshPoint + _textForceRatio*textPoint + _natureForceRatio*getPosition());
+    }
+    
+    // ----------------------------------------------------------------------------------------------
+    void update(float _natureForceRatio, float _textForceRatio) {
+        // Classical update
+        //ofLog() << "A : Position : " << getPosition();
+        update();
+        
+        //ofLog() << "B : Position : " << getPosition();
+        setPosition(_textForceRatio*textPoint + _natureForceRatio*getPosition());
+        
+        //ofLog() << "C : Position : " << getPosition();
+        
+    }
+    
+    // ----------------------------------------------------------------------------------------------
     void update() {
-        ofVec3f realSpeed = speed * entropy;
-        setPosition(getPosition().x + realSpeed.x, getPosition().y + realSpeed.y, getPosition().z + realSpeed.z);
+        
+        ofVec3f realSpeed = speed.normalize() * entropy;
+        ofVec3f textSpeed = (textPoint - getPosition()).normalize() * textEntropy;
+        //ofVec3f meshSpeed = (meshPoint - getPosition()).normalize() * meshEntropy;
+        
+        ofPoint newPosition = getPosition();
+        newPosition +=  realSpeed;
+        newPosition +=  textSpeed;
+        //newPosition +=  meshSpeed;
+        
+        if(newPosition.x == NAN){
+            ofLog() << "Fuck, we have a NAN : " << ofToString(newPosition);
+        }
+        
+        setPosition(newPosition);
+        
     }
     
     // ----------------------------------------------------------------------------------------------
@@ -99,7 +145,7 @@ public:
             
         }
         
-        	setPosition(position);
+        setPosition(position);
         
     }
     
@@ -118,8 +164,10 @@ public:
         speed = _speed;
     }
     // ----------------------------------------------------------------------------------------------
-    void setEntropy(float _entropy){
+    void setEntropies(float _entropy, float _textEntropy, float _meshEntropy){
         entropy = _entropy;
+        textEntropy = _textEntropy;
+        meshEntropy = _meshEntropy;
     }
     
     
