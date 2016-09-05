@@ -13,12 +13,17 @@ void matrDolorosaMeshes::setup(){
     
     //mesh.load("Arbor.ply");
     //mesh.load("lofi-bunny.ply");
+    /*
     addMesh("ANGE_LESS_Exported.obj");
     addMesh("ATENA_Exported.obj");
     addMesh("CHILD_Exported.obj");
     addMesh("VIRGEN_Exported.obj");
     addMesh("CHURCH_Exported.obj");
     addMesh("MOUNTAIN_Exported.obj");
+    */
+    addMesh("SCENE.obj");
+    addMesh("CRYPT_4.obj");
+    addMesh("CRYPT_5.obj");
     
     meshesPG.setName("meshes");
     
@@ -78,7 +83,7 @@ void matrDolorosaMeshes::draw(){
     
     // Whole MATRIX Because Mesh is Upside Down
     ofPushMatrix();
-    ofScale(0.25, 0.25, 0.25);
+    //ofScale(0.25, 0.25, 0.25);
     ofRotateX(180);
     
     if(bDrawFaces){

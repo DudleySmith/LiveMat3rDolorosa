@@ -13,7 +13,7 @@
 
 #include "matrDolorosaNode.h"
 
-#define nodeAmountMax 2000
+#define nodeAmountMax 500
 
 class matrDolorosaNodeField {
 	
@@ -41,17 +41,17 @@ private:
     
     ofParameter<int>    nbNodes;
     ofParameter<bool>   xyLinks;
-    ofParameter<bool>   sphereLimit;
     ofParameter<float>  distance;
     ofParameter<float>  entropyBig;
     ofParameter<float>  entropyFine;
     ofParameter<float>  circleSize;
     
-    ofParameter<float>  xLimit;
-    ofParameter<float>  yLimit;
-    ofParameter<float>  zLimit;
-    ofParameter<float>  exRadius;
-    ofParameter<float>  inRadius;
+    ofParameter<float>  limitX;
+    ofParameter<float>  limitY;
+    ofParameter<float>  limitZ;
+    ofParameter<bool>   limitIsASphere;
+    ofParameter<float>  limitExRadius;
+    ofParameter<float>  limitInRadius;
     
     ofParameter<ofColor>    sphereColor;
     ofParameter<ofColor>    linkColor;

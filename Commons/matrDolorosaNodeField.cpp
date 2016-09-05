@@ -25,13 +25,13 @@ void matrDolorosaNodeField::setup() {
     field.add(entropyBig.set("entropyBig", 10, 0, 200));
     field.add(entropyFine.set("entropyFine", 0.1, 0, 5));
     
-    field.add(xLimit.set("xLimit",200, 0, 1000));
-    field.add(yLimit.set("yLimit",200, 0, 1000));
-    field.add(zLimit.set("zLimit",200, 0, 1000));
+    field.add(limitX.set("limitX",200, 0, 1000));
+    field.add(limitY.set("limitY",200, 0, 1000));
+    field.add(limitZ.set("limitZ",200, 0, 1000));
     
-    field.add(sphereLimit.set("sphereLimit",true));
-    field.add(exRadius.set("exRadius",200, 0, 1000));
-    field.add(inRadius.set("inRadius",0, 0, 1000));
+    field.add(limitIsASphere.set("limitIsASphere",true));
+    field.add(limitExRadius.set("limitExRadius",200, 0, 1000));
+    field.add(limitInRadius.set("limitInRadius",0, 0, 1000));
     
     field.add(sphereColor.set("sphereColor",ofColor(255,255),ofColor(0,0),ofColor(255,255)));
     field.add(linkColor.set("linkColor",ofColor(255,255),ofColor(0,0),ofColor(255,255)));
@@ -110,7 +110,7 @@ void matrDolorosaNodeField::setupFont(){
                         ofPoint onePoint;
                         
                         onePoint = oneChar.getOutline()[idxOutline].getVertices()[idxPoint];
-                        onePoint += ofPoint(charRatio * 2 * exRadius, 0);
+                        onePoint += ofPoint(charRatio * 2 * limitExRadius, 0);
                         
                         textPoints.addVertex(onePoint);
                         //ofLog() << "onePoint=" << ofToString(onePoint);
@@ -209,10 +209,10 @@ void matrDolorosaNodeField::update() {
         //temp.update();
         
         // then we collide
-        if(sphereLimit){
-            temp.checkSphericCollisions(inRadius, exRadius);
+        if(limitIsASphere){
+            temp.checkSphericCollisions(limitInRadius, limitExRadius);
         }else{
-            temp.checkCubicCollisions(ofVec3f(xLimit, yLimit, zLimit));
+            temp.checkCubicCollisions(ofVec3f(limitX, limitY, limitZ));
         }
         
     }
@@ -268,7 +268,7 @@ void matrDolorosaNodeField::generateNodes(int _nodeAmount) {
         
         matrDolorosaNode newNode(1);
         
-        newNode.setPosition(ofRandom(-1 * xLimit, xLimit), ofRandom(-1 * yLimit, yLimit), ofRandom(-1 * zLimit, zLimit));
+        newNode.setPosition(ofRandom(-1 * limitX, limitX), ofRandom(-1 * limitY, limitY), ofRandom(-1 * limitZ, limitZ));
         newNode.setSpeed(ofPoint(ofRandom(-1, 1), ofRandom(-1, 1), ofRandom(-1, 1)));
         
         nodeArray.push_back(newNode);
